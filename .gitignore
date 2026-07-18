@@ -1,0 +1,10 @@
+# Contexte local pour Claude Code — ne jamais publier
+CLAUDE.md
+
+# Fichiers système macOS
+.DS_Store
+.AppleDouble
+Thumbs.db
+
+# Notes de travail perso (optionnel)
+/notes/
