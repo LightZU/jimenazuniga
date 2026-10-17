@@ -8,3 +8,6 @@ Thumbs.db
 
 # Notes de travail perso (optionnel)
 /notes/
+
+# Documentation de maintenance locale (jamais publiée)
+AGENTS.md

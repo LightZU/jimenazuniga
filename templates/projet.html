@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- Page générée par build.mjs à partir de templates/projet.html et content/projets/{{slug}}.md : ne pas modifier à la main. -->
+<html lang="{{lang}}">
+<head>
+  <meta charset="utf-8">
+  <title>{{titre}}</title>
+  <meta content="{{titre}}" property="og:title">
+  <meta content="{{titre}}" name="twitter:title">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+{{liens_langues}}
+  <link href="{{racine}}css/style.css" rel="stylesheet">
+  <link href="{{racine}}images/favicon.jpg" rel="icon" type="image/jpeg">
+  <link href="{{racine}}images/webclip.jpg" rel="apple-touch-icon">
+</head>
+<body class="page-projet page-projet--{{mise_en_page}}">
+  <!-- Fiche : titre (visible quand le texte est replié) et texte -->
+  <div class="fiche" data-panneau="bascule">
+    <a href="#" class="libelle">{{titre}}</a>
+    <div class="contenu{{classe_texte}}">{{texte}}</div>
+  </div>
+
+  <a href="index.html" class="libelle lien-retour">back</a>
+
+  <!-- Diaporama -->
+  <div class="diaporama"{{options_diaporama}}>
+    <div class="diaporama__masque">
+{{diapos}}
+    </div>
+    <div class="diaporama__fleche diaporama__fleche--precedent" role="button" tabindex="0" aria-label="{{aria_precedent}}"></div>
+    <div class="diaporama__fleche diaporama__fleche--suivant" role="button" tabindex="0" aria-label="{{aria_suivant}}"></div>
+  </div>
+{{lien_suivant}}
+  <nav class="langues">{{selecteur_langue}}</nav>
+
+  <script src="{{racine}}js/site.js"></script>
+</body>
+</html>

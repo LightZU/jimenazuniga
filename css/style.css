@@ -1,0 +1,924 @@
+/* ==========================================================================
+   Jimena Zúñiga — feuille de style unique du site
+   --------------------------------------------------------------------------
+   Remplace webflow.css, normalize.css et jimenazuniga.webflow.css.
+   Organisation :
+     1. Police et variables (couleurs, tailles de texte, décalages)
+     2. Base (html, body, images)
+     3. Éléments communs (libellés, liens de texte)
+     4. Accueil : fond, rond central, panneaux, sélecteur de langue, aperçus
+     5. Pages projet : fiche texte, liens back / suivant, diaporama, visuels
+     6. Points de rupture : ≥1280px, ≤991px, ≤767px, ≤479px (mobile)
+   Les états sont des classes ajoutées par js/site.js :
+     body.mode-blanc   fond blanc après le premier survol (accueil)
+     body.jimena-ouverte  texte « Jimena » ouvert (masque contact et news)
+     .est-ouvert / .est-ferme  panneau ouvert / refermé
+   ========================================================================== */
+
+/* 1. Police et variables ------------------------------------------------- */
+
+@font-face {
+  font-family: Graphik;
+  src: url('../fonts/Graphik-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --orange: #ff4100;
+  --bleu: #0093d4;
+  --blanc: #fff;
+
+  /* Taille du texte (libellés, listes, descriptions) */
+  --taille: 32px;
+  --interligne: 38.5px;
+
+  /* Décalages optiques pour coller le texte aux bords haut et bas de l'écran */
+  --decalage-haut: -5px;
+  --decalage-bas: -9px;
+}
+
+/* 2. Base ---------------------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  height: 100vh;
+  min-height: 100%;
+  margin: 0;
+  overflow: auto;
+  background-color: var(--blanc);
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+::selection {
+  color: #fff6fc;
+  background: var(--blanc);
+}
+
+/* 3. Éléments communs ---------------------------------------------------- */
+
+/* Libellé : les mots en grand (projets, contact, back…) */
+.libelle {
+  position: relative;
+  z-index: 15;
+  color: var(--blanc);
+  font-family: Graphik, sans-serif;
+  font-size: var(--taille);
+  line-height: var(--interligne);
+  text-decoration: none;
+}
+
+/* Contenu d'un panneau ou d'une fiche (masqué par défaut) */
+.contenu {
+  position: fixed;
+  z-index: 15;
+  display: none;
+  width: 33.33%;
+  color: var(--orange);
+  font-family: Graphik, sans-serif;
+  font-size: var(--taille);
+  font-weight: 400;
+  line-height: var(--interligne);
+}
+
+/* Liens dans les textes : orange, bleu au survol */
+.lien-texte,
+.lien-liste {
+  color: var(--orange);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.lien-texte:hover,
+.lien-liste:hover {
+  color: var(--bleu);
+}
+
+/* 4. Accueil ------------------------------------------------------------- */
+
+/* Fond bleu plein écran (blanc en mode blanc) */
+.fond-couleur {
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  background-color: var(--bleu);
+}
+
+.mode-blanc .fond-couleur {
+  background-color: var(--blanc);
+}
+
+.mode-blanc .libelle {
+  color: var(--orange);
+}
+
+/* Rond central : boîte de hauteur nulle au milieu de l'écran,
+   l'image (un tiers de la largeur) déborde de part et d'autre. */
+.rond {
+  position: fixed;
+  inset: 50% 33.33%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}
+
+.rond--halo {
+  cursor: pointer;
+}
+
+/* Halo blanc du mode bleu : orange au survol, apparaît en grandissant */
+.rond__halo {
+  position: relative;
+  z-index: 24;
+  width: 100%;
+  max-width: 100%;
+  border: 0 none var(--bleu);
+  background-color: var(--blanc);
+  box-shadow: 0 -6px 3px 9px var(--bleu);
+  cursor: pointer;
+  /* scale3d : même rendu (lissage de l'image tramée) que l'animation d'origine */
+  transform: scale3d(1, 1, 1);
+  animation: apparition-opacite 200ms ease, apparition-taille 800ms ease-out;
+}
+
+.rond__halo:hover {
+  background-color: var(--orange);
+}
+
+@keyframes apparition-opacite {
+  from { opacity: 0; }
+}
+
+@keyframes apparition-taille {
+  from { transform: scale3d(.3, .3, 1); }
+}
+
+/* Halo bleu du mode blanc : sa taille change selon le panneau survolé */
+.rond__bleu {
+  position: relative;
+  display: none;
+  width: 100%;
+  max-width: 100%;
+  cursor: default;
+  transition: transform 800ms ease-out;
+}
+
+.mode-blanc .rond__halo {
+  display: none;
+}
+
+.mode-blanc .rond__bleu {
+  display: block;
+}
+
+/* Panneau ouvert : le libellé disparaît, le contenu apparaît */
+.panneau.est-ouvert > .libelle {
+  display: none;
+}
+
+.panneau.est-ouvert > .contenu {
+  display: block;
+}
+
+/* Jimena (haut gauche) */
+.panneau--jimena {
+  position: absolute;
+  inset: 0 auto auto 0;
+  z-index: 25;
+  max-width: 41.66%;
+  margin-top: var(--decalage-haut);
+  overflow: auto;
+  color: var(--orange);
+  font-family: Graphik, sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.panneau--jimena > .libelle {
+  display: block;
+}
+
+.panneau--jimena > .contenu {
+  position: relative;
+  inset: 0 auto auto 0;
+  width: auto;
+  max-width: 100%;
+  margin-top: 0;
+  overflow: auto;
+  background-color: transparent;
+}
+
+/* Quand le texte de Jimena est ouvert, il passe sur « contact » et « news » */
+.jimena-ouverte .panneau--contact > .libelle,
+.jimena-ouverte .panneau--news > .libelle {
+  display: none;
+}
+
+/* Projets (haut centre) : liste centrée sous le milieu de l'écran */
+.panneau--projets {
+  position: fixed;
+  inset: 0 50% auto;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: var(--decalage-haut);
+}
+
+.panneau--projets > .contenu {
+  width: auto;
+  max-width: 50%;
+  text-align: center;
+}
+
+/* Collaborations (bas centre) */
+.panneau--collaborations {
+  position: fixed;
+  inset: auto 50% 0;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: var(--decalage-bas);
+}
+
+.panneau--collaborations > .contenu {
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: auto;
+  max-width: 50%;
+  text-align: center;
+}
+
+.panneau--collaborations.est-ouvert > .contenu {
+  display: flex;
+}
+
+/* Contact (milieu gauche, libellé vertical) */
+.panneau--contact {
+  position: fixed;
+  inset: 50% auto 50% 0;
+  z-index: 15;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 33.33%;
+}
+
+.panneau--contact > .libelle {
+  margin-left: -47px;
+  transform: rotate(-90deg);
+}
+
+.panneau--contact > .contenu {
+  position: absolute;
+  width: auto;
+  max-width: 100%;
+  text-align: left;
+}
+
+/* Instagram (milieu droite, libellé vertical) */
+.instagram {
+  position: fixed;
+  inset: 50% 0 50% auto;
+  z-index: 15;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 33.33%;
+}
+
+.instagram > .libelle {
+  margin-right: -61px;
+  transform: rotate(90deg);
+}
+
+.mode-blanc .instagram > .libelle:hover {
+  color: var(--bleu);
+}
+
+/* News (bas gauche) */
+.panneau--news {
+  position: fixed;
+  inset: auto auto 0 0;
+  z-index: 25;
+  margin-bottom: var(--decalage-bas);
+}
+
+.panneau--news > .libelle {
+  display: block;
+}
+
+.panneau--news > .contenu {
+  inset: auto auto 0 0;
+  width: auto;
+  max-width: 33.33%;
+  margin-bottom: var(--decalage-bas);
+  background-color: var(--blanc);
+}
+
+/* Events (bas droite) */
+.panneau--events {
+  position: fixed;
+  inset: auto 0 0 auto;
+  z-index: 25;
+  margin-bottom: var(--decalage-bas);
+}
+
+.panneau--events > .libelle {
+  display: block;
+}
+
+.panneau--events > .contenu {
+  inset: auto 0 0 auto;
+  width: auto;
+  max-width: 33.33%;
+  margin-bottom: var(--decalage-bas);
+  background-color: var(--blanc);
+  text-align: right;
+}
+
+/* Sélecteur de langue « fr/en » (haut droite sur l'accueil).
+   Mode bleu : texte blanc. Mode blanc : langue active en bleu, l'autre en orange. */
+.langues {
+  position: fixed;
+  inset: 0 0 auto auto;
+  z-index: 25;
+  display: flex;
+  align-items: center;
+  margin-top: var(--decalage-haut);
+  color: var(--blanc);
+  font-family: Graphik, sans-serif;
+  font-size: var(--taille);
+  line-height: var(--interligne);
+  text-align: right;
+}
+
+.langues > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.mode-blanc .langues,
+.page-projet .langues {
+  color: var(--orange);
+}
+
+.mode-blanc .langues > .langue-active,
+.page-projet .langues > .langue-active {
+  color: var(--bleu);
+}
+
+.mode-blanc .langues > a:last-child {
+  margin-left: -2px;
+}
+
+/* Aperçus : image affichée au survol d'un lien des listes (un tiers de l'écran) */
+.apercu {
+  position: fixed;
+  z-index: 25;
+  display: none;
+  width: 33.33%;
+}
+
+.apercu.est-visible {
+  display: inline-block;
+}
+
+.apercu--haut-gauche { inset: 0 auto auto 0; }
+.apercu--bas-gauche { inset: auto auto 0 0; }
+.apercu--haut-droite { inset: 0 0 auto auto; }
+.apercu--bas-droite { inset: auto 0 0 auto; }
+.apercu--centre-gauche { inset: 50% auto auto 0; transform: translateY(-50%); }
+.apercu--centre-droite { inset: 50% 0 auto auto; transform: translateY(-50%); }
+
+/* 5. Pages projet -------------------------------------------------------- */
+
+/* Fiche : titre + texte. Agence = texte à gauche ; projet/event = texte à droite.
+   Le texte est visible au départ ; après un survol il se replie sur son titre. */
+.fiche {
+  position: absolute;
+  inset: 0 auto auto 0;
+  z-index: 20;
+  min-width: 41.66%;
+  max-width: 41.66%;
+  min-height: 90vh;
+  margin-top: var(--decalage-haut);
+  padding-right: 9%;
+  overflow: auto;
+}
+
+.page-projet--projet .fiche {
+  inset: 0 0 auto auto;
+  min-height: 80vh;
+  padding-left: 9%;
+  padding-right: 0;
+  text-align: right;
+}
+
+.fiche > .libelle {
+  display: none;
+  color: var(--orange);
+}
+
+.fiche > .contenu {
+  position: relative;
+  left: 0;
+  display: block;
+  width: auto;
+  max-width: 100%;
+  background-color: var(--blanc);
+}
+
+.fiche.est-ferme > .contenu {
+  display: none;
+}
+
+.fiche.est-ferme > .libelle {
+  display: inline;
+}
+
+/* Lien « back » (bas droite) */
+.lien-retour {
+  position: fixed;
+  inset: auto 0 0 auto;
+  z-index: 17;
+  margin-bottom: var(--decalage-bas);
+  color: var(--orange);
+}
+
+.lien-retour:hover,
+.lien-suivant:hover,
+.page-projet .langues > a:hover {
+  color: var(--bleu);
+}
+
+/* Lien « projet suivant » (haut gauche) / « agence suivante » (haut droite) */
+.lien-suivant {
+  position: fixed;
+  inset: 0 0 auto auto;
+  z-index: 16;
+  display: block;
+  margin-top: var(--decalage-haut);
+  color: var(--orange);
+  font-family: Graphik, sans-serif;
+  font-size: var(--taille);
+  font-weight: 400;
+  line-height: var(--interligne);
+  text-align: right;
+  text-decoration: none;
+}
+
+.page-projet--projet .lien-suivant {
+  inset: 0 auto auto 0;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: -2px;
+}
+
+/* Sélecteur de langue des pages projet (bas gauche, même niveau que « back ») */
+.page-projet .langues {
+  inset: auto auto 0 0;
+  z-index: 17;
+  margin-top: 0;
+  margin-bottom: var(--decalage-bas);
+}
+
+/* Diaporama plein écran : une diapositive visible à la fois, fondu enchaîné */
+.diaporama {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.diaporama__masque {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  overflow: hidden;
+  cursor: default;
+}
+
+.diaporama__diapo {
+  position: absolute;
+  inset: 0;
+  visibility: hidden;
+  transition: opacity 150ms ease;
+}
+
+.diaporama__diapo.est-active {
+  visibility: visible;
+}
+
+/* Zones cliquables invisibles « précédent » et « suivant » */
+.diaporama__fleche {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.diaporama__fleche:focus {
+  outline: 0;
+}
+
+.diaporama--une-image .diaporama__fleche {
+  display: none;
+}
+
+/* Projet : précédent = premier quart gauche, suivant = quart suivant */
+.page-projet--projet .diaporama__fleche--precedent {
+  left: 0;
+  z-index: 3;
+  width: 29.16%;
+  height: 100%;
+}
+
+.page-projet--projet .diaporama__fleche--suivant {
+  top: 0;
+  bottom: auto;
+  left: 29.16%;
+  z-index: 4;
+  width: 29.16%;
+  height: 100%;
+}
+
+/* Agence : les deux zones sont à droite du texte */
+.page-projet--agence .diaporama__fleche--precedent {
+  left: 41.66%;
+  z-index: 3;
+  width: 29.16%;
+}
+
+.page-projet--agence .diaporama__fleche--suivant {
+  right: 0;
+  z-index: 15;
+  width: 29.16%;
+}
+
+/* Visuels : largeur en douzièmes d'écran ; « plein » = toute la hauteur */
+.visuel {
+  position: absolute;
+  inset: 0 0 auto auto;
+}
+
+.page-projet--projet .visuel {
+  inset: 0 auto auto 0;
+}
+
+.visuel--5 { width: 41.66%; max-width: 41.66%; }
+.visuel--6 { width: 50%; max-width: 50%; }
+.visuel--7 { width: 58.33%; max-width: 58.33%; }
+
+.visuel--plein {
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+/* 6. Points de rupture --------------------------------------------------- */
+
+/* Grands écrans */
+@media screen and (min-width: 1280px) {
+  .instagram > .libelle {
+    margin-right: -60px;
+  }
+
+  .rond__halo {
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: inset 0 0 0 4px var(--bleu), 0 0 3px 8px var(--bleu);
+  }
+}
+
+/* Tablette */
+@media screen and (max-width: 991px) {
+  :root {
+    --taille: 24px;
+    --interligne: 28px;
+    --decalage-haut: -4px;
+    --decalage-bas: -6px;
+  }
+
+  .instagram > .libelle {
+    margin-right: -46px;
+  }
+
+  .panneau--contact > .libelle {
+    margin-left: -35px;
+  }
+}
+
+/* Petite tablette */
+@media screen and (max-width: 767px) {
+  .rond {
+    z-index: 40;
+  }
+
+  .panneau--jimena {
+    z-index: 45;
+  }
+
+  .panneau--projets,
+  .panneau--collaborations {
+    z-index: 42;
+  }
+
+  .panneau--news,
+  .panneau--events {
+    z-index: 35;
+  }
+
+  .panneau--contact {
+    width: 41.66%;
+  }
+
+  .panneau--news > .contenu,
+  .panneau--events > .contenu {
+    max-width: 41.66%;
+  }
+
+  .lien-liste {
+    cursor: default;
+  }
+
+  /* Pas d'aperçus sur petit écran */
+  .apercu {
+    max-width: 0;
+  }
+
+  /* Le texte de la fiche est replié : on touche le titre pour l'ouvrir */
+  .fiche > .contenu {
+    display: none;
+  }
+
+  .fiche > .libelle {
+    display: inline;
+  }
+
+  .fiche.est-ouvert > .contenu {
+    display: block;
+  }
+
+  .fiche.est-ouvert > .libelle {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 479px) {
+  :root {
+    --taille: 20px;
+    --interligne: 24px;
+  }
+
+  .rond {
+    left: 16.66%;
+    right: 16.66%;
+  }
+
+  .rond__halo {
+    border: 1px solid var(--bleu);
+  }
+
+  /* Accueil : les libellés des bords deviennent verticaux */
+  .panneau--jimena {
+    max-width: 100%;
+    margin-top: -2px;
+  }
+
+  .panneau--jimena > .libelle {
+    position: fixed;
+    inset: 0 auto auto 0;
+    margin-top: 55px;
+    margin-left: -58px;
+    transform: rotate(-90deg);
+  }
+
+  .panneau--jimena > .contenu {
+    max-width: 83.33%;
+    background-color: var(--blanc);
+  }
+
+  .panneau--projets {
+    position: absolute;
+    margin-top: -2px;
+  }
+
+  .panneau--projets > .libelle {
+    position: fixed;
+  }
+
+  .panneau--projets > .contenu,
+  .panneau--collaborations > .contenu {
+    width: 90%;
+    max-width: none;
+  }
+
+  .panneau--collaborations {
+    z-index: 30;
+    margin-bottom: -4px;
+  }
+
+  .panneau--contact {
+    width: 83.33%;
+  }
+
+  .panneau--contact > .libelle {
+    margin-left: -29px;
+  }
+
+  .instagram > .libelle {
+    margin-right: -38px;
+  }
+
+  .panneau--news > .libelle {
+    position: fixed;
+    margin-top: -43px;
+    margin-left: -19px;
+    transform: rotate(-90deg);
+  }
+
+  .panneau--news > .contenu {
+    max-width: 83.33%;
+    margin-bottom: -4px;
+  }
+
+  .panneau--events {
+    margin-bottom: -5px;
+  }
+
+  .panneau--events > .libelle {
+    position: fixed;
+    margin-top: -49px;
+    margin-left: -38px;
+    transform: rotate(90deg);
+  }
+
+  .panneau--events > .contenu {
+    width: 83.33%;
+    max-width: 83.33%;
+    margin-bottom: -4px;
+  }
+
+  .accueil .langues {
+    margin-top: 11px;
+    margin-right: -11.5px;
+    transform: rotate(90deg);
+  }
+
+  /* Liens de texte : bleus sur mobile (sauf contact et vidéos externes) */
+  .lien-texte {
+    color: var(--bleu);
+  }
+
+  .lien-texte--orange-mobile {
+    color: var(--orange);
+  }
+
+  .lien-texte--orange-mobile:hover {
+    color: var(--bleu);
+  }
+
+  /* Pages projet : titre en haut à gauche, « back » en haut à droite,
+     « suivant » en bas à droite, images calées en bas de l'écran. */
+  .fiche,
+  .page-projet--projet .fiche {
+    inset: 0 auto auto 0;
+    min-width: auto;
+    max-width: 100%;
+    min-height: auto;
+    margin-top: -3px;
+    padding-right: 0;
+    overflow: visible;
+    background-color: var(--blanc);
+  }
+
+  .page-projet--projet .fiche {
+    min-width: 83%;
+    min-height: 123px;
+    padding-left: 0;
+    text-align: left;
+  }
+
+  .fiche > .libelle {
+    position: fixed;
+  }
+
+  .fiche > .contenu {
+    max-width: 83.33%;
+    margin-bottom: 4px;
+  }
+
+  .fiche > .contenu--plein-ecran {
+    min-height: 100vh;
+  }
+
+  .lien-retour {
+    inset: 0 0 auto auto;
+    z-index: 25;
+    margin-top: -3px;
+    margin-bottom: 0;
+  }
+
+  .lien-suivant,
+  .page-projet--projet .lien-suivant {
+    inset: auto 0 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 120px;
+    margin-bottom: -1px;
+  }
+
+  .page-projet--agence .lien-suivant {
+    margin-bottom: -5px;
+  }
+
+  .page-projet .langues {
+    margin-bottom: -1px;
+  }
+
+  .diaporama {
+    margin-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .diaporama__fleche,
+  .page-projet--projet .diaporama__fleche--precedent,
+  .page-projet--projet .diaporama__fleche--suivant,
+  .page-projet--agence .diaporama__fleche--precedent,
+  .page-projet--agence .diaporama__fleche--suivant {
+    position: fixed;
+    inset: 0 auto 0 0;
+    z-index: 15;
+    width: 50%;
+    height: auto;
+    margin: 120px 0 0;
+  }
+
+  .page-projet .diaporama__fleche--suivant {
+    inset: 0 0 0 auto;
+  }
+
+  .page-projet--projet .diaporama__fleche--precedent {
+    z-index: 3;
+  }
+
+  .page-projet--projet .diaporama__fleche--suivant {
+    z-index: 4;
+  }
+
+  /* Visuels : 11/12 de la largeur, calés en bas à gauche ou à droite
+     (reprend exactement la disposition d'origine) */
+  .visuel {
+    width: 91.66%;
+    max-width: 91.66%;
+    inset: auto 0 0 auto;
+  }
+
+  .page-projet--agence .visuel--7,
+  .page-projet--projet .visuel--6 {
+    inset: auto auto 0 0;
+  }
+
+  .page-projet--projet .visuel--5,
+  .page-projet--projet .visuel--7 {
+    inset: auto 0 0 auto;
+  }
+
+  .visuel--plein,
+  .page-projet .visuel--plein {
+    inset: 0 auto auto 0;
+    width: 100%;
+    max-width: 100%;
+  }
+}

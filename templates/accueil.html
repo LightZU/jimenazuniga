@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- Page générée par build.mjs à partir de templates/accueil.html et content/ : ne pas modifier à la main. -->
+<html lang="{{lang}}">
+<head>
+  <meta charset="utf-8">
+  <title>{{titre}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+{{liens_langues}}
+  <link href="{{racine}}css/style.css" rel="stylesheet">
+  <link href="{{racine}}images/favicon.jpg" rel="icon" type="image/jpeg">
+  <link href="{{racine}}images/webclip.jpg" rel="apple-touch-icon">
+</head>
+<body class="accueil">
+  <!-- Fond bleu (blanc en « mode blanc ») -->
+  <div class="fond-couleur"></div>
+
+  <!-- Rond central : halo bleu (mode blanc) puis halo blanc (mode bleu, cliquable) -->
+  <div class="rond"><img src="{{racine}}images/rond-bleu.png" alt="" class="rond__bleu"></div>
+  <div class="rond rond--halo"><img src="{{racine}}images/rond-halo.png" alt="" class="rond__halo"></div>
+
+  <!-- Jimena (haut gauche) -->
+  <div class="panneau panneau--jimena" data-panneau="bascule" data-mode-blanc data-echelle="1">
+    <a href="#" class="libelle">Jimena Zúñiga</a>
+    <div class="contenu">{{bio}}</div>
+  </div>
+
+  <!-- Projets (haut centre) -->
+  <div class="panneau panneau--projets" data-panneau data-mode-blanc data-echelle="0.3">
+    <a href="#" class="libelle">{{libelle_projets}}</a>
+    <div class="contenu">{{liste_projets}}</div>
+  </div>
+
+  <!-- Langue (haut droite) -->
+  <nav class="langues" data-mode-blanc data-echelle="0.7">{{selecteur_langue}}</nav>
+
+  <!-- Contact (milieu gauche) -->
+  <div class="panneau panneau--contact" data-panneau data-mode-blanc data-echelle="0.5">
+    <a href="#" class="libelle">contact</a>
+    <div class="contenu">{{contact}}</div>
+  </div>
+
+  <!-- Instagram (milieu droite) -->
+  <div class="instagram">
+    <a href="{{instagram}}" target="_blank" class="libelle" data-mode-blanc data-echelle="0.4">instagram</a>
+  </div>
+
+  <!-- News (bas gauche) -->
+  <div class="panneau panneau--news" data-panneau data-mode-blanc data-echelle="0.8">
+    <a href="#" class="libelle">news</a>
+    <div class="contenu">{{news}}</div>
+  </div>
+
+  <!-- Collaborations (bas centre) -->
+  <div class="panneau panneau--collaborations" data-panneau data-mode-blanc data-echelle="0.3">
+    <a href="#" class="libelle">collaborations</a>
+    <div class="contenu">{{liste_collaborations}}</div>
+  </div>
+
+  <!-- Events (bas droite) -->
+  <div class="panneau panneau--events" data-panneau data-mode-blanc data-echelle="0.6">
+    <a href="#" class="libelle">events</a>
+    <div class="contenu">{{liste_events}}</div>
+  </div>
+
+  <!-- Aperçus affichés au survol des listes -->
+{{apercus}}
+
+  <script src="{{racine}}js/site.js"></script>
+</body>
+</html>
