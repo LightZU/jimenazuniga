@@ -84,6 +84,33 @@
   /* 2. Accueil ------------------------------------------------------------- */
   var rondBleu = document.querySelector('.rond__bleu');
 
+  // Changement de langue depuis l'accueil : la nouvelle page s'ouvre dans le
+  // même état (mode blanc, taille du halo) au lieu de repartir du fond bleu.
+  // L'état est mémorisé le temps d'un seul chargement (sessionStorage).
+  var CLE_ETAT = 'jz-accueil-etat';
+  if (rondBleu) {
+    try {
+      var etat = sessionStorage.getItem(CLE_ETAT);
+      sessionStorage.removeItem(CLE_ETAT);
+      if (etat) {
+        body.classList.add('mode-blanc');
+        rondBleu.style.transition = 'none'; // pas d'animation du halo à l'arrivée
+        rondBleu.style.transform = etat;
+        void rondBleu.offsetWidth;
+        rondBleu.style.transition = '';
+      }
+    } catch (e) { /* stockage indisponible : la page démarre simplement en bleu */ }
+
+    document.querySelectorAll('.langues a').forEach(function (lien) {
+      lien.addEventListener('click', function () {
+        if (!body.classList.contains('mode-blanc')) return;
+        try {
+          sessionStorage.setItem(CLE_ETAT, rondBleu.style.transform || 'none');
+        } catch (e) { /* idem */ }
+      });
+    });
+  }
+
   // Mode blanc : définitif dès le premier survol d'un élément [data-mode-blanc]
   // ou au clic sur le rond. Le halo bleu prend la taille data-echelle de
   // l'élément survolé et la garde ensuite.
