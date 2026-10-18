@@ -5,7 +5,8 @@
    Usage :  node build.mjs
    Entrées : content/accueil.md, content/projets/*.md,
              templates/accueil.html, templates/projet.html
-   Sorties : index.html, <slug>.html, en/index.html, en/<slug>.html
+   Sorties : index.html, <slug>.html, en/index.html, en/<slug>.html,
+             sitemap.xml, robots.txt, llms.txt (référencement)
    Aucune dépendance : Node 18 ou plus suffit.
    ========================================================================== */
 
@@ -219,6 +220,101 @@ function selecteurLangue(fichier, lang) {
 
 const traduit = (p, cle, lang) => (lang === 'en' && p[`${cle}_en`]) || p[cle];
 
+/* --- Référencement (invisible à l'écran) ----------------------------------
+   Description, aperçus de partage (Open Graph), données structurées
+   schema.org (JSON-LD), sitemap.xml, robots.txt et llms.txt.
+   Règle : on ne présente jamais Jimena comme autrice d'un projet ; une page
+   « collaborations » parle de l'agence, une page projet décrit le projet,
+   et c'est le texte de la page qui dit quel a été son rôle. */
+const A = accueil.meta;
+const NOM = A.nom || 'Jimena Zúñiga';
+const urlPage = (fichier, lang) => SITE + (lang === 'en' ? 'en/' : '') + (fichier === 'index.html' ? '' : fichier);
+
+// Texte brut à partir du Markdown (liens, retours à la ligne, &nbsp;)
+function texteBrut(texte = '') {
+  return texte
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+// Description : champ « description » du .md, sinon début du texte (≈ 160 caractères)
+function resumer(texte, max = 160) {
+  const brut = texteBrut(texte);
+  if (brut.length <= max) return brut;
+  const phrases = brut.match(/[^.!?]+[.!?]+/g) || [];
+  let resultat = '';
+  for (const phrase of phrases) {
+    if ((resultat + phrase).length > max) break;
+    resultat += phrase;
+  }
+  if (resultat.trim().length >= 80) return resultat.trim();
+  return brut.slice(0, max - 1).replace(/\s+\S*$/, '') + '…';
+}
+
+function urlImage(nom) {
+  const base = nom.replace(/\.jpe?g$/i, '');
+  const grande = `${base}-1600.jpg`;
+  return SITE + 'images/' + (base !== nom && fs.existsSync(path.join(RACINE, 'images', grande)) ? grande : nom);
+}
+
+function jsonLd(objet) {
+  return `  <script type="application/ld+json">\n${JSON.stringify(objet, null, 2).replace(/</g, '\\u003c').replace(/^/gm, '  ')}\n  </script>`;
+}
+
+// Balises <head> : description, canonical, Open Graph, Twitter, JSON-LD
+function balisesSeo({ lang, fichier, titre, description, image, donnees }) {
+  const url = urlPage(fichier, lang);
+  const attr = echapperAttribut;
+  return [
+    `  <meta name="description" content="${attr(description)}">`,
+    `  <link rel="canonical" href="${url}">`,
+    `  <meta property="og:type" content="website">`,
+    `  <meta property="og:site_name" content="${attr(NOM)}">`,
+    `  <meta property="og:title" content="${attr(titre)}">`,
+    `  <meta property="og:description" content="${attr(description)}">`,
+    `  <meta property="og:url" content="${url}">`,
+    `  <meta property="og:image" content="${image}">`,
+    `  <meta property="og:locale" content="${lang === 'fr' ? 'fr_FR' : 'en_US'}">`,
+    `  <meta property="og:locale:alternate" content="${lang === 'fr' ? 'en_US' : 'fr_FR'}">`,
+    `  <meta name="twitter:card" content="summary_large_image">`,
+    `  <meta name="twitter:title" content="${attr(titre)}">`,
+    jsonLd(donnees),
+  ].join('\n');
+}
+
+const SITE_WEB = { '@type': 'WebSite', '@id': `${SITE}#site`, url: SITE, name: NOM, inLanguage: ['fr', 'en'], author: { '@id': `${SITE}#jimena` } };
+
+function personne(lang) {
+  const lignes = (accueil.sections.adresse || '').split('\n').map((l) => l.trim()).filter(Boolean);
+  const ville = (lignes[lignes.length - 1] || '').match(/^(\d{5})\s+(.+)$/);
+  return {
+    '@type': 'Person',
+    '@id': `${SITE}#jimena`,
+    name: NOM,
+    alternateName: NOM.normalize('NFD').replace(/[\u0300-\u036f]/g, ''),
+    jobTitle: lang === 'en' ? A.metier_en : A.metier,
+    description: texteBrut(accueil.sections[`description ${lang}`]),
+    url: urlPage('index.html', lang),
+    image: urlImage(A.image_partage),
+    email: `mailto:${A.email}`,
+    telephone: A.telephone.replace(/\s/g, ''),
+    address: {
+      '@type': 'PostalAddress',
+      ...(lignes.length >= 2 && ville ? { streetAddress: lignes[lignes.length - 2], postalCode: ville[1], addressLocality: ville[2] } : {}),
+      addressCountry: 'FR',
+    },
+    sameAs: [A.instagram],
+    knowsAbout: (lang === 'en' ? A.domaines_en : A.domaines) || [],
+    alumniOf: (A.formations || []).map((nom) => ({ '@type': 'EducationalOrganization', name: nom })),
+  };
+}
+
+function descriptionProjet(p, lang) {
+  return (lang === 'en' && p.description_en) || p.description || resumer(p.sections[lang]);
+}
+
 /* --- Accueil --------------------------------------------------------------- */
 function listeAccueil(rubrique, lang) {
   const elements = projets
@@ -258,6 +354,25 @@ function construireAccueil(lang) {
     racine,
     titre: echapper(a.titre),
     liens_langues: liensLangues('index.html'),
+    seo: balisesSeo({
+      lang,
+      fichier: 'index.html',
+      titre: a.titre,
+      description: texteBrut(accueil.sections[`description ${lang}`]),
+      image: urlImage(a.image_partage),
+      donnees: {
+        '@context': 'https://schema.org',
+        '@graph': [SITE_WEB, personne(lang), {
+          '@type': 'WebPage',
+          '@id': urlPage('index.html', lang),
+          url: urlPage('index.html', lang),
+          name: a.titre,
+          inLanguage: lang,
+          isPartOf: { '@id': `${SITE}#site` },
+          about: { '@id': `${SITE}#jimena` },
+        }],
+      },
+    }),
     bio: texteEnHtml(accueil.sections[`bio ${lang}`]),
     libelle_projets: TEXTES[lang].projets,
     liste_projets: listeAccueil('projets', lang).join('<br>'),
@@ -293,6 +408,32 @@ function construireProjet(p, lang) {
     slug: p.slug,
     titre,
     liens_langues: liensLangues(`${p.slug}.html`),
+    seo: balisesSeo({
+      lang,
+      fichier: `${p.slug}.html`,
+      titre: traduit(p, 'titre', lang),
+      description: descriptionProjet(p, lang),
+      image: urlImage(p.images[0].fichier),
+      donnees: {
+        '@context': 'https://schema.org',
+        '@type': 'WebPage',
+        '@id': urlPage(`${p.slug}.html`, lang),
+        url: urlPage(`${p.slug}.html`, lang),
+        name: traduit(p, 'titre', lang),
+        description: descriptionProjet(p, lang),
+        inLanguage: lang,
+        isPartOf: SITE_WEB,
+        primaryImageOfPage: urlImage(p.images[0].fichier),
+        // Collaborations : la page parle de l'agence ; sinon, du projet (sans auteur déclaré)
+        about: p.rubrique === 'collaborations'
+          ? { '@type': 'Organization', name: p.titre }
+          : {
+            '@type': 'CreativeWork',
+            name: traduit(p, 'titre', lang),
+            ...((p.accueil || '').match(/\b(19|20)\d{2}\b/) ? { dateCreated: p.accueil.match(/\b(19|20)\d{2}\b/)[0] } : {}),
+          },
+      },
+    }),
     mise_en_page: p.rubrique === 'collaborations' ? 'agence' : 'projet',
     classe_texte: p.texte_mobile_plein_ecran === 'oui' ? ' contenu--plein-ecran' : '',
     texte: texteEnHtml(p.sections[lang] || ''),
@@ -312,6 +453,66 @@ for (const lang of LANGUES) {
   for (const p of projets) if (p.aUnePage) construireProjet(p, lang);
 }
 
+/* --- sitemap.xml, robots.txt, llms.txt -------------------------------------- */
+const fichiersPages = ['index.html', ...projets.filter((p) => p.aUnePage).map((p) => `${p.slug}.html`)];
+ecrire('sitemap.xml', [
+  '<?xml version="1.0" encoding="UTF-8"?>',
+  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">',
+  ...fichiersPages.flatMap((f) => LANGUES.map((lang) => [
+    '  <url>',
+    `    <loc>${urlPage(f, lang)}</loc>`,
+    ...LANGUES.map((l) => `    <xhtml:link rel="alternate" hreflang="${l}" href="${urlPage(f, l)}"/>`),
+    `    <xhtml:link rel="alternate" hreflang="x-default" href="${urlPage(f, 'fr')}"/>`,
+    '  </url>',
+  ].join('\n'))),
+  '</urlset>',
+  '',
+].join('\n'));
+
+ecrire('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${SITE}sitemap.xml\n`);
+
+// llms.txt : résumé en texte simple pour les assistants IA (convention llmstxt.org)
+const rubriquesLlms = [
+  ['projets', 'Projets'],
+  ['collaborations', 'Collaborations avec des agences de conception lumière (le texte précise le rôle de Jimena)'],
+  ['events', 'Événements, workshops et conférences'],
+];
+// Texte Markdown sur une ligne (liens conservés)
+const enLigne = (texte = '') => texte.replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
+const ligneLlms = (p) => {
+  if (!p.aUnePage) return p.lien ? `- [${p.titre}](${p.lien})` : `- ${p.titre}`;
+  return `- [${p.titre}](${urlPage(`${p.slug}.html`, 'fr')}) — ${enLigne(p.sections.fr)}`;
+};
+ecrire('llms.txt', [
+  `# ${NOM}`,
+  '',
+  `> ${texteBrut(accueil.sections['description fr'])}`,
+  `> ${texteBrut(accueil.sections['description en'])}`,
+  '',
+  enLigne(accueil.sections['bio fr']),
+  '',
+  ...rubriquesLlms.flatMap(([rubrique, intitule]) => [
+    `## ${intitule}`,
+    '',
+    ...projets
+      .filter((p) => p.rubrique === rubrique)
+      .sort((a, b) => (Number(a.ordre) || 99) - (Number(b.ordre) || 99))
+      .map(ligneLlms),
+    '',
+  ]),
+  '## Contact',
+  '',
+  `- Atelier : ${texteBrut(accueil.sections.adresse)}`,
+  `- Téléphone : ${A.telephone}`,
+  `- E-mail : ${A.email}`,
+  `- Instagram : ${A.instagram}`,
+  '',
+  '## English',
+  '',
+  `- [English version of the website](${urlPage('index.html', 'en')})`,
+  '',
+].join('\n'));
+
 // Supprime les anciennes pages générées dont le .md n'existe plus
 for (const dossier of ['', 'en']) {
   const abs = path.join(RACINE, dossier);
@@ -326,4 +527,4 @@ for (const dossier of ['', 'en']) {
   }
 }
 
-console.log(`${ecrits.size} pages générées${avertissements ? `, ${avertissements} avertissement(s)` : ''}.`);
+console.log(`${ecrits.size} fichiers générés${avertissements ? `, ${avertissements} avertissement(s)` : ''}.`);

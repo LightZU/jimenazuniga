@@ -4,9 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>{{titre}}</title>
-  <meta content="{{titre}}" property="og:title">
-  <meta content="{{titre}}" name="twitter:title">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+{{seo}}
 {{liens_langues}}
   <link href="{{racine}}css/style.css" rel="stylesheet">
   <link href="{{racine}}images/favicon.jpg" rel="icon" type="image/jpeg">
@@ -15,7 +14,7 @@
 <body class="page-projet page-projet--{{mise_en_page}}">
   <!-- Fiche : titre (visible quand le texte est replié) et texte -->
   <div class="fiche" data-panneau="bascule">
-    <a href="#" class="libelle">{{titre}}</a>
+    <h1 class="libelle"><a href="#">{{titre}}</a></h1>
     <div class="contenu{{classe_texte}}">{{texte}}</div>
   </div>
 

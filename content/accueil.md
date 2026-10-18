@@ -7,6 +7,27 @@ email: contact@jimenazuniga.com
 news_lien: https://musee-courbet.fr/exposition/
 news_apercu: news-apercu.jpg
 news_apercu_position: haut-gauche
+# Référencement (invisible à l'écran : moteurs de recherche, IA, aperçus de partage)
+nom: Jimena Zúñiga
+metier: Conceptrice lumière
+metier_en: Lighting designer
+image_partage: luna-apercu.jpg
+domaines:
+  - Conception lumière
+  - Éclairage muséographique et d'exposition
+  - Scénographie lumière
+  - Éclairage urbain et des espaces publics
+  - Objets lumineux et design
+domaines_en:
+  - Lighting design
+  - Museum and exhibition lighting
+  - Lighting scenography
+  - Urban and public space lighting
+  - Luminous objects and design
+formations:
+  - École Boulle
+  - Escola Massana
+  - IAE Lyon, Université Jean Moulin Lyon 3
 ---
 
 ## bio fr
@@ -30,3 +51,11 @@ Eclairage pour les Expositions "Paysages de marche", et de "Chambre d'écho" d'E
 ## news en
 
 Lighting for the exhibitions "Paysages de marche" and Eva Jospin's "Chambre d'écho", until 19/10/2025 at the Musée Courbet in Ornans
+
+## description fr
+
+Jimena Zúñiga, conceptrice lumière basée à Marseille : conception lumière, éclairage muséographique et d'exposition, scénographie, éclairage urbain et objets lumineux. Projets en France et à l'international.
+
+## description en
+
+Jimena Zúñiga, lighting designer based in Marseille, France: lighting design, museum and exhibition lighting, scenography, urban lighting and luminous objects. Projects in France and abroad.
