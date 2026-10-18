@@ -340,7 +340,8 @@ function listeAccueil(rubrique, lang) {
   });
 }
 
-/* News : le texte est un lien vers news_lien (avec l'aperçu au survol).
+/* News : le texte est un lien vers news_lien. L'aperçu s'affiche au survol
+   de tout l'encart (data-apercu sur le bloc, dans templates/accueil.html).
    Si une ligne contient elle-même un lien [texte](url), le lien principal
    s'arrête avant cette ligne (un lien ne peut pas en contenir un autre). */
 function construireNews(texte, lien) {
@@ -350,7 +351,7 @@ function construireNews(texte, lien) {
   const principal = lignes.slice(0, i).join('\n');
   const reste = lignes.slice(i).join('\n');
   const morceaux = [];
-  if (principal) morceaux.push(`<a href="${echapperAttribut(lien)}" target="_blank" class="lien-texte" data-apercu="news">${texteEnHtml(principal)}</a>`);
+  if (principal) morceaux.push(`<a href="${echapperAttribut(lien)}" target="_blank" class="lien-texte">${texteEnHtml(principal)}</a>`);
   if (reste) morceaux.push(texteEnHtml(reste));
   return morceaux.join('<br>');
 }
