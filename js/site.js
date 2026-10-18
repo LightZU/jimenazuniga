@@ -122,12 +122,12 @@
     });
   });
 
-  var halo = document.querySelector('.rond__halo');
-  if (halo) {
+  // (deux images : la blanche, et l'orange qui la remplace au survol)
+  document.querySelectorAll('.rond__halo').forEach(function (halo) {
     halo.addEventListener('click', function () {
       body.classList.add('mode-blanc');
     });
-  }
+  });
 
   // Aperçus : un lien [data-apercu="x"] affiche l'image #apercu-x au survol
   document.querySelectorAll('[data-apercu]').forEach(function (lien) {
