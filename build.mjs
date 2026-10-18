@@ -340,6 +340,21 @@ function listeAccueil(rubrique, lang) {
   });
 }
 
+/* News : le texte est un lien vers news_lien (avec l'aperçu au survol).
+   Si une ligne contient elle-même un lien [texte](url), le lien principal
+   s'arrête avant cette ligne (un lien ne peut pas en contenir un autre). */
+function construireNews(texte, lien) {
+  const lignes = (texte || '').split('\n');
+  let i = lignes.findIndex((l) => /\[[^\]]+\]\([^)\s]+\)/.test(l));
+  if (i === -1) i = lignes.length;
+  const principal = lignes.slice(0, i).join('\n');
+  const reste = lignes.slice(i).join('\n');
+  const morceaux = [];
+  if (principal) morceaux.push(`<a href="${echapperAttribut(lien)}" target="_blank" class="lien-texte" data-apercu="news">${texteEnHtml(principal)}</a>`);
+  if (reste) morceaux.push(texteEnHtml(reste));
+  return morceaux.join('<br>');
+}
+
 function construireAccueil(lang) {
   const racine = lang === 'fr' ? '' : '../';
   const a = accueil.meta;
@@ -348,7 +363,7 @@ function construireAccueil(lang) {
     `<a href="tel:${a.telephone.replace(/\s/g, '')}" class="lien-texte lien-texte--orange-mobile">${echapper(a.telephone)}</a>`,
     `<a href="mailto:${a.email}" class="lien-texte lien-texte--orange-mobile">${echapper(a.email)}</a>`,
   ].join('<br>');
-  const news = `<a href="${echapperAttribut(a.news_lien)}" target="_blank" class="lien-texte" data-apercu="news">${texteEnHtml(accueil.sections[`news ${lang}`])}</a>`;
+  const news = construireNews(accueil.sections[`news ${lang}`], a.news_lien);
 
   const apercus = projets
     .filter((p) => p.apercu && p.accueil && p.accueil !== 'non')

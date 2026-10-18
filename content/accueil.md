@@ -2,10 +2,10 @@
 instagram: https://www.instagram.com/zu.jime/
 # Adresse du profil LinkedIn (laisser vide si aucun)
 linkedin: https://www.linkedin.com/in/jimena-zuniga-6135415b/
-adresse_lien: https://www.google.com/maps/place/5+Rue+Chantecler,+13007+Marseille/@43.2867626,5.364758,17z/data=!3m1!4b1!4m5!3m4!1s0x12c9c0ceb73d5251:0x284fd32d47ea601c!8m2!3d43.2867587!4d5.3669467
+adresse_lien: https://www.google.com/maps/search/?api=1&query=140+Rue+Sainte,+13007+Marseille
 telephone: +33 7 82 84 03 85
 email: contact@jimenazuniga.com
-news_lien: https://musee-courbet.fr/exposition/
+news_lien: https://tangible-festival.org/programme/chiche
 news_apercu: news-apercu.jpg
 news_apercu_position: haut-gauche
 # Référencement (invisible à l'écran : moteurs de recherche, IA, aperçus de partage)
@@ -41,17 +41,21 @@ After graduating in Spatial Design from the [École Boulle](https://ecole-boulle
 
 ## adresse
 
-Atelier Brébion Hupin
-5 rue Chantecler
+MOA Architecture
+140 Rue Sainte
 13007 Marseille
 
 ## news fr
 
-Eclairage pour les Expositions "Paysages de marche", et de "Chambre d'écho" d'Eva Jospin, jusqu'au 19/10/2025 au musée Courbet à Ornans
+Mise en lumière pour l'agrès-sculpture ENSŌ
+Chiche ! Le design au Sud
+À voir jusqu'au 25 octobre 2026 dans la galerie [videochroniques](https://www.instagram.com/videochroniques__vdchrnqs/?hl=fr) dans le Panier à Marseille.
 
 ## news en
 
-Lighting for the exhibitions "Paysages de marche" and Eva Jospin's "Chambre d'écho", until 19/10/2025 at the Musée Courbet in Ornans
+Lighting for the ENSŌ apparatus-sculpture
+Chiche! Design in the South
+On view until 25 October 2026 at the [videochroniques](https://www.instagram.com/videochroniques__vdchrnqs/?hl=fr) gallery in Le Panier, Marseille.
 
 ## description fr
 
