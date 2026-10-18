@@ -8,6 +8,7 @@ apercu_position: centre-gauche
 suivant: micro-architecture-lumiere
 suivant_libelle: projet
 texte_mobile_plein_ecran: oui
+auteurs: Jimena Zúñiga, Victor Mauro
 images:
   - luna-01.jpg | 6 | plein
   - luna-02.jpg | 6

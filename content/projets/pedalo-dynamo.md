@@ -7,6 +7,8 @@ apercu: pedalo-dynamo-apercu.jpg
 apercu_position: haut-gauche
 suivant: narcisse-echo
 suivant_libelle: projet
+auteurs: Victor Mauro
+avec: Jimena Zúñiga
 images:
   - pedalo-dynamo-01.jpg | 7
   - pedalo-dynamo-02.jpg | 6 | plein

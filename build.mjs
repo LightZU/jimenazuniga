@@ -228,6 +228,14 @@ const traduit = (p, cle, lang) => (lang === 'en' && p[`${cle}_en`]) || p[cle];
    et c'est le texte de la page qui dit quel a été son rôle. */
 const A = accueil.meta;
 const NOM = A.nom || 'Jimena Zúñiga';
+const LINKEDIN = typeof A.linkedin === 'string' ? A.linkedin : '';
+// Titre d'onglet et d'aperçu de partage : « Jimena Zúñiga – Conceptrice lumière »,
+// précédé du nom du projet sur les pages projet
+const JIMENA = { '@type': 'Person', '@id': `${SITE}#jimena`, name: NOM }; // référence à sa fiche
+const titreSite = (lang) => `${NOM} – ${lang === 'en' ? A.metier_en : A.metier}`;
+// « Jimena Zúñiga, Victor Mauro » → personnes schema.org (Jimena = sa fiche)
+const personnes = (liste = '') => liste.split(',').map((n) => n.trim()).filter(Boolean)
+  .map((nom) => (nom === NOM ? JIMENA : { '@type': 'Person', name: nom }));
 const urlPage = (fichier, lang) => SITE + (lang === 'en' ? 'en/' : '') + (fichier === 'index.html' ? '' : fichier);
 
 // Texte brut à partir du Markdown (liens, retours à la ligne, &nbsp;)
@@ -284,7 +292,7 @@ function balisesSeo({ lang, fichier, titre, description, image, donnees }) {
   ].join('\n');
 }
 
-const SITE_WEB = { '@type': 'WebSite', '@id': `${SITE}#site`, url: SITE, name: NOM, inLanguage: ['fr', 'en'], author: { '@id': `${SITE}#jimena` } };
+const SITE_WEB = { '@type': 'WebSite', '@id': `${SITE}#site`, url: SITE, name: NOM, inLanguage: ['fr', 'en'], author: JIMENA };
 
 function personne(lang) {
   const lignes = (accueil.sections.adresse || '').split('\n').map((l) => l.trim()).filter(Boolean);
@@ -305,7 +313,7 @@ function personne(lang) {
       ...(lignes.length >= 2 && ville ? { streetAddress: lignes[lignes.length - 2], postalCode: ville[1], addressLocality: ville[2] } : {}),
       addressCountry: 'FR',
     },
-    sameAs: [A.instagram],
+    sameAs: [A.instagram, LINKEDIN].filter(Boolean),
     knowsAbout: (lang === 'en' ? A.domaines_en : A.domaines) || [],
     alumniOf: (A.formations || []).map((nom) => ({ '@type': 'EducationalOrganization', name: nom })),
   };
@@ -352,12 +360,12 @@ function construireAccueil(lang) {
   const html = remplir(fs.readFileSync(path.join(RACINE, 'templates', 'accueil.html'), 'utf8'), {
     lang,
     racine,
-    titre: echapper(a.titre),
+    titre: echapper(titreSite(lang)),
     liens_langues: liensLangues('index.html'),
     seo: balisesSeo({
       lang,
       fichier: 'index.html',
-      titre: a.titre,
+      titre: titreSite(lang),
       description: texteBrut(accueil.sections[`description ${lang}`]),
       image: urlImage(a.image_partage),
       donnees: {
@@ -366,7 +374,7 @@ function construireAccueil(lang) {
           '@type': 'WebPage',
           '@id': urlPage('index.html', lang),
           url: urlPage('index.html', lang),
-          name: a.titre,
+          name: titreSite(lang),
           inLanguage: lang,
           isPartOf: { '@id': `${SITE}#site` },
           about: { '@id': `${SITE}#jimena` },
@@ -407,11 +415,12 @@ function construireProjet(p, lang) {
     racine,
     slug: p.slug,
     titre,
+    titre_onglet: echapper(`${traduit(p, 'titre', lang)} | ${titreSite(lang)}`),
     liens_langues: liensLangues(`${p.slug}.html`),
     seo: balisesSeo({
       lang,
       fichier: `${p.slug}.html`,
-      titre: traduit(p, 'titre', lang),
+      titre: `${traduit(p, 'titre', lang)} | ${titreSite(lang)}`,
       description: descriptionProjet(p, lang),
       image: urlImage(p.images[0].fichier),
       donnees: {
@@ -431,6 +440,9 @@ function construireProjet(p, lang) {
             '@type': 'CreativeWork',
             name: traduit(p, 'titre', lang),
             ...((p.accueil || '').match(/\b(19|20)\d{2}\b/) ? { dateCreated: p.accueil.match(/\b(19|20)\d{2}\b/)[0] } : {}),
+            // Auteurs et participants : uniquement s'ils sont indiqués dans le .md
+            ...(p.auteurs ? { creator: personnes(p.auteurs) } : {}),
+            ...(p.avec ? { contributor: personnes(p.avec) } : {}),
           },
       },
     }),
@@ -481,7 +493,8 @@ const rubriquesLlms = [
 const enLigne = (texte = '') => texte.replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
 const ligneLlms = (p) => {
   if (!p.aUnePage) return p.lien ? `- [${p.titre}](${p.lien})` : `- ${p.titre}`;
-  return `- [${p.titre}](${urlPage(`${p.slug}.html`, 'fr')}) — ${enLigne(p.sections.fr)}`;
+  const credits = [p.auteurs && `Auteurs : ${p.auteurs}`, p.avec && `Avec : ${p.avec}`].filter(Boolean).join(' ; ');
+  return `- [${p.titre}](${urlPage(`${p.slug}.html`, 'fr')})${credits ? ` (${credits})` : ''} — ${enLigne(p.sections.fr)}`;
 };
 ecrire('llms.txt', [
   `# ${NOM}`,
@@ -506,6 +519,7 @@ ecrire('llms.txt', [
   `- Téléphone : ${A.telephone}`,
   `- E-mail : ${A.email}`,
   `- Instagram : ${A.instagram}`,
+  ...(LINKEDIN ? [`- LinkedIn : ${LINKEDIN}`] : []),
   '',
   '## English',
   '',

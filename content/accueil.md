@@ -1,6 +1,7 @@
 ---
-titre: Jimena Zuñiga
 instagram: https://www.instagram.com/zu.jime/
+# Adresse du profil LinkedIn (laisser vide si aucun)
+linkedin:
 adresse_lien: https://www.google.com/maps/place/5+Rue+Chantecler,+13007+Marseille/@43.2867626,5.364758,17z/data=!3m1!4b1!4m5!3m4!1s0x12c9c0ceb73d5251:0x284fd32d47ea601c!8m2!3d43.2867587!4d5.3669467
 telephone: +33 7 82 84 03 85
 email: contact@jimenazuniga.com

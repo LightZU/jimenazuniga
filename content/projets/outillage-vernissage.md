@@ -7,6 +7,8 @@ apercu: outillage-vernissage-apercu.jpg
 apercu_position: haut-gauche
 suivant: disruptive-rain
 suivant_libelle: projet
+auteurs: Céline Pelcé
+avec: Jimena Zúñiga
 images:
   - outillage-vernissage-01.jpg | 7 | plein
   - outillage-vernissage-02.jpg | 6

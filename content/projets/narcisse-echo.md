@@ -7,6 +7,7 @@ apercu: narcisse-echo-apercu.jpg
 apercu_position: centre-gauche
 suivant: outillage-vernissage
 suivant_libelle: projet
+auteurs: Jimena Zúñiga, Victor Mauro
 images:
   - narcisse-echo-01.jpg | 7
   - narcisse-echo-02.jpg | 6

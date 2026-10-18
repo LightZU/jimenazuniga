@@ -7,6 +7,7 @@ apercu: cadran-apercu.jpg
 apercu_position: haut-gauche
 suivant: luna
 suivant_libelle: projet
+auteurs: Jimena Zúñiga, Victor Mauro
 images:
   - cadran-01.jpg | 6
   - cadran-02.jpg | 6

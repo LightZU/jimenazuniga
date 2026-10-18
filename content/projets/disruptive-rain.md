@@ -7,6 +7,7 @@ apercu: disruptive-rain-apercu.jpg
 apercu_position: bas-gauche
 suivant: cadran
 suivant_libelle: projet
+auteurs: Jimena Zúñiga, Victor Mauro
 images:
   - disruptive-rain-01.jpg | 7
 ---
