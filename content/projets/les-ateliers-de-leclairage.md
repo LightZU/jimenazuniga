@@ -2,8 +2,8 @@
 titre: Les Ateliers de l'Eclairage
 rubrique: collaborations
 ordre: 1
-accueil: Les Ateliers de l'Eclairage, depuis 2022
-accueil_en: Les Ateliers de l'Eclairage, since 2022
+accueil: Les Ateliers de l'Eclairage, depuis 2020
+accueil_en: Les Ateliers de l'Eclairage, since 2020
 apercu: les-ateliers-de-leclairage-apercu.jpg
 apercu_position: bas-droite
 suivant: dumas-lumiere
