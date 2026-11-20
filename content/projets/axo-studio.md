@@ -13,7 +13,7 @@ images:
 
 ## fr
 
-Ax'o Studio, éclairagiste à Paris, m'intègre dans l'équipe de réglages lumière pour Galeries Lafayette. Depuis 2018 plusieurs sessions ont été organisées dans les magasins Galeries La Fayette de Marseille et de Nice.
+Ax'o Studio, éclairagiste à Paris, m'intègre dans l'équipe de réglages lumière pour les Galeries Lafayette. Depuis 2018 plusieurs sessions ont été organisées dans les magasins Galeries Lafayette de Marseille et de Nice.
 
 ## en
 

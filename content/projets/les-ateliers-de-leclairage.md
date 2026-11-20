@@ -16,7 +16,7 @@ images:
 
 ## fr
 
-[Les Ateliers de l'Eclairage](https://www.ateliers-eclairage.fr/) est une agence basée à Paris et à Marseille. En tant que concepteurs lumière et éclairagistes, l'agence aborde des thématiques variées qui recoupent l’ensemble des problématiques d'usages et d'espace aussi bien en intérieur qu'en extérieur. Aux côtés de l'équipe, je participe à l'assistance et la gestion de différents projets de conception lumière: résidentiel, hôtellerie et restauration, paysage et espaces urbains.
+[Les Ateliers de l'Eclairage](https://www.ateliers-eclairage.fr/) est une agence basée à Paris et à Marseille. En tant que concepteurs lumière et éclairagistes, l'agence aborde des thématiques variées qui recoupent l’ensemble des problématiques d'usages et d'espace aussi bien en intérieur qu'en extérieur. Aux côtés de l'équipe, je participe à l'assistance et la gestion de différents projets de conception lumière : résidentiel, hôtellerie et restauration, paysage et espaces urbains.
 
 ## en
 

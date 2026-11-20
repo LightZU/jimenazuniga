@@ -14,7 +14,7 @@ images:
 
 ## fr
 
-Disruptive Rain est une structure lumineuse: un nuage de pluie. Pourtant ce nuage au contour dessiné - qui fait écho au logotype utilisé pour les prévisions météorologiques - donne à voir une pluie en sens inverse. Au lieu de tomber, elle s’élève vers le ciel. Ce phénomène optique nous renvoie l’image d’une météo détraquée. Il pose la question du climat et de ses enjeux. Il fait appel à de nouveaux paradigmes, où l'impossible devient possible, afin d’inverser l’effet du changement climatique. En collaboration avec [Victor Mauro.](https://cavafairedubruit.fr/)
+Disruptive Rain est une structure lumineuse : un nuage de pluie. Pourtant ce nuage au contour dessiné - qui fait écho au logotype utilisé pour les prévisions météorologiques - donne à voir une pluie en sens inverse. Au lieu de tomber, elle s’élève vers le ciel. Ce phénomène optique nous renvoie l’image d’une météo détraquée. Il pose la question du climat et de ses enjeux. Il fait appel à de nouveaux paradigmes, où l'impossible devient possible, afin d’inverser l’effet du changement climatique. En collaboration avec [Victor Mauro](https://cavafairedubruit.fr/).
 
 ## en
 

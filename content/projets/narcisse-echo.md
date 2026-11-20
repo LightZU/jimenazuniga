@@ -15,7 +15,7 @@ images:
 
 ## fr
 
-Narcisse & Écho est un projet inspiré par le mythe grec. Nous avons imaginé un espace &nbsp;de contemplation où le son et la lumière sont les protagonistes. Un lieu de contemplation aux reflets chatoyants qui, faisant appel à nos sens, nous amène vers de nouvelles perceptions. L’esprit de ces deux entités sont réinjectées dans la chambre à travers les éléments de mobilier : un portique miroitant et une assise à l’acoustique spéciale. En collaboration avec [Victor Mauro](https://cavafairedubruit.fr/).
+Narcisse & Écho est un projet inspiré par le mythe grec. Nous avons imaginé un espace de contemplation où le son et la lumière sont les protagonistes. Un lieu de contemplation aux reflets chatoyants qui, faisant appel à nos sens, nous amène vers de nouvelles perceptions. L’esprit de ces deux entités est réinjecté dans la chambre à travers les éléments de mobilier : un portique miroitant et une assise à l’acoustique spéciale. En collaboration avec [Victor Mauro](https://cavafairedubruit.fr/).
 
 ## en
 

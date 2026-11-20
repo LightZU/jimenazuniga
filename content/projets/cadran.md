@@ -18,7 +18,7 @@ images:
 
 ## fr
 
-Cadran est un objet lumineux en granit du Sidobre qui s'inspire des cadrans solaires. Il remplace la lumière du soleil par une lumière artificielle laquelle, grâce à un fine tige, génère une ombre projetée. Luminaire et horloge, cadran appelle à une relecture du temps. Seule une aiguille est révélée. Le temps passe mais l'angoisse d'être à la minute près n'existe pas. Un système mécanique et électronique permet à l'ombre de tourner subtilement selon les heures dans la journée. En collaboration avec [Victor Mauro](https://cavafairedubruit.fr/cadran). Réalisé avec &nbsp;les ateliers de Vabre, Benjamin Troupel, Michel Attal et Iguzzini.
+Cadran est un objet lumineux en granit du Sidobre qui s'inspire des cadrans solaires. Il remplace la lumière du soleil par une lumière artificielle laquelle, grâce à une fine tige, génère une ombre projetée. Luminaire et horloge, Cadran appelle à une relecture du temps. Seule une aiguille est révélée. Le temps passe mais l'angoisse d'être à la minute près n'existe pas. Un système mécanique et électronique permet à l'ombre de tourner subtilement selon les heures dans la journée. En collaboration avec [Victor Mauro](https://cavafairedubruit.fr/cadran). Réalisé avec les ateliers de Vabre, Benjamin Troupel, Michel Attal et iGuzzini.
 
 [voir la vidéo](https://vimeo.com/458698606)
 [presse](https://www.ladepeche.fr/2020/09/08/le-granit-du-sidobre-montre-un-autre-visage-a-la-paris-design-week-9056320.php)

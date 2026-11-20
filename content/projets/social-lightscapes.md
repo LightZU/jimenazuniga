@@ -13,9 +13,9 @@ images:
 
 ## fr
 
-Social Lightscapes est un Workshop dans le cadre du PLDC 2017. La place des Fêtes à Paris est un espace majeur du 19ème arrondissement. La place est un lieu de rencontre, le lieu du marché et accueille différents événements. Quatre jours de travail, après une étude sociale et spatiale en équipe, nous ont permis d'apporter des solutions à cet espace publique: écouter les habitants du quartier&nbsp;et leurs principales inquiétudes &nbsp;afin -&nbsp;grâce à un éclairage qualitatif et attractif - d' améliorer la qualité de vie nocturne des citadins, de leur redonner l'envie d'habiter la place, et, en hommage à son nom, faire la fête!
+Social Lightscapes est un workshop dans le cadre du PLDC 2017. La place des Fêtes à Paris est un espace majeur du 19e arrondissement. La place est un lieu de rencontre, le lieu du marché et accueille différents événements. Quatre jours de travail, après une étude sociale et spatiale en équipe, nous ont permis d'apporter des solutions à cet espace public : écouter les habitants du quartier et leurs principales inquiétudes afin – grâce à un éclairage qualitatif et attractif – d'améliorer la qualité de vie nocturne des citadins, de leur redonner l'envie d'habiter la place, et, en hommage à son nom, faire la fête!
 
-[voir la video](https://youtu.be/d0svCuLN-f4)
+[voir la vidéo](https://youtu.be/d0svCuLN-f4)
 
 ## en
 

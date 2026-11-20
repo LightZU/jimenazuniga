@@ -14,7 +14,7 @@ images:
 
 ## fr
 
-Jardin Onirique est une installation lumière réalisée dans le cadre des Fêtes de Lumières de Lyon en 2014. Il est le fruit d'un workshop entre les élèves de l'école d'architecture de Leipzieg, de l'école de Wismar et des étudiants de l'IAE de Lyon. Une ambiance lumière suggère la douceur d'un rêve qui, de temps en temps - grâce à une programmation dmx - prend des allures saccadées et psychédéliques. Quand le rêve s’imprègne de révolution : lumières colorées, mais contrastées, soulèvent le paradoxe et l'équilibre de ces deux sujets.
+Jardin Onirique est une installation lumière réalisée dans le cadre des Fête des Lumières de Lyon en 2014. Il est le fruit d'un workshop entre les élèves de l'école d'architecture de Leipzig, de l'école de Wismar et des étudiants de l'IAE de Lyon. Une ambiance lumière suggère la douceur d'un rêve qui, de temps en temps - grâce à une programmation DMX - prend des allures saccadées et psychédéliques. Quand le rêve s’imprègne de révolution : lumières colorées, mais contrastées, soulèvent le paradoxe et l'équilibre de ces deux sujets.
 
 ## en
 

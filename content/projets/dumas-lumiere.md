@@ -14,7 +14,7 @@ images:
 
 ## fr
 
-Dumas Lumière est l'agence parisienne de Marc Dumas. Je partage avec lui une expérience de 3 mois durant lesquels j'ai pu aborder des sujets comme la lumière extérieur, intérieure, la muséographie et explorer les qualités plastique de la lumière. Pour le projet du Musée de Beaux Arts d'Orléans je l'accompagne dans la mission de relevés photométriques d'œuvres, d'études techniques ainsi que dans la proposition d'une nouvelle solution pour optimiser l'éclairage.
+Dumas Lumière est l'agence parisienne de Marc Dumas. Je partage avec lui une expérience de 3 mois durant lesquels j'ai pu aborder des sujets comme la lumière extérieure, intérieure, la muséographie et explorer les qualités plastiques de la lumière. Pour le projet du Musée des Beaux-Arts d'Orléans je l'accompagne dans la mission de relevés photométriques d'œuvres, d'études techniques ainsi que dans la proposition d'une nouvelle solution pour optimiser l'éclairage.
 
 ## en
 

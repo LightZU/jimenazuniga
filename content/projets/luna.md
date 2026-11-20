@@ -17,7 +17,7 @@ images:
 
 ## fr
 
-Luna est une applique murale en granit du Sidobre. Sa texture bouchardée éclairée par une lumière rasante nous dévoile une surface lunaire aux multiples brillances. En collaboration avec [Victor Mauro](https://www.xn--avafairedubruit-dmb.fr/). Réalisé avec &nbsp;les [Ateliers de Vabre Granit](https://www.ateliersvabregranit.com/), l'[association Granit et Pierres du Sidobre](https://www.granit-pierres-sidobre.fr/objectifs), [SVTU](http://www.svtu.fr/) et [iGuzzini](https://www.iguzzini.com/fr/).
+Luna est une applique murale en granit du Sidobre. Sa texture bouchardée éclairée par une lumière rasante nous dévoile une surface lunaire aux multiples brillances. En collaboration avec [Victor Mauro](https://www.xn--avafairedubruit-dmb.fr/). Réalisé avec les [Ateliers de Vabre Granit](https://www.ateliersvabregranit.com/), l'[association Granit et Pierres du Sidobre](https://www.granit-pierres-sidobre.fr/objectifs), [SVTU](http://www.svtu.fr/) et [iGuzzini](https://www.iguzzini.com/fr/).
 
 «La Madre Luna, hoy vestida de toda su redondez, los bañaba con su mejor luz…» Rafael Dumett, El espía del Inca.
 

@@ -19,7 +19,7 @@ images:
 
 ## fr
 
-Workshop à l'[ESADMM](http://esadmm.fr/), grâce à l'organisation de [Radiance35](https://www.radiance35.eu/fr/) et le soutient de l'[ACE](https://www.ace-fr.org/). Un atelier de 4h pour partager avec &nbsp;les étudiants une expérience de lumière, matière et espace. Après avoir travaillé sur un concept, puis manipuler les différentes sources lumière, chaque groupe d'étudiants propose une scénographie lumière dans un espace choisi par eux même dans le jardin de l'école.
+Workshop à l'[ESADMM](http://esadmm.fr/), grâce à l'organisation de [Radiance35](https://www.radiance35.eu/fr/) et le soutien de l'[ACE](https://www.ace-fr.org/). Un atelier de 4h pour partager avec les étudiants une expérience de lumière, matière et espace. Après avoir travaillé sur un concept, puis manipulé les différentes sources lumière, chaque groupe d'étudiants propose une scénographie lumière dans un espace choisi par eux-mêmes dans le jardin de l'école.
 
 ## en
 

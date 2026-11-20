@@ -15,7 +15,7 @@ images:
 
 ## fr
 
-Voyons Voir, agence de conception lumière à Paris, est spécialisée dans les espaces intérieurs et l'univers du luxe. Pendant 2 ans, je développe à leurs côtés un travail soucieux de finitions et de valorisation des matériaux. Je travaille l'effet que produit la lumière plutôt que la lumière en elle même: une recherche plastique et technique pour s'attarder sur les détails d'intégration les plus discrets possibles afin de garder une dimension magique de la lumière dans l'espace.
+Voyons Voir, agence de conception lumière à Paris, est spécialisée dans les espaces intérieurs et l'univers du luxe. Pendant 2 ans, je développe à leurs côtés un travail soucieux de finitions et de valorisation des matériaux. Je travaille l'effet que produit la lumière plutôt que la lumière en elle-même : une recherche plastique et technique pour s'attarder sur les détails d'intégration les plus discrets possibles afin de garder une dimension magique de la lumière dans l'espace.
 Boutique Pierre Hermé, Paris.
 Architecte intérieur: Jeff van Dyck.
 

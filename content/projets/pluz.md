@@ -17,7 +17,7 @@ images:
 
 ## fr
 
-pLuz, agence de conception lumière à Medellin, s'intéresse à l' éclairage social. En son cœur, un travail de méthodologie et de concertation afin d'intégrer les habitants des quartiers concernés au processus créatif en les sensibilisant à l'espace urbain et l'éclairage de leur ville. En 2016 je travaille aux côtés de Raphael Girouard sur la Quebrada Chiguaza à Bogotá. Le projet ARCOIRIS est le résultat de 2 mois de collaboration, d'échanges avec les habitants du quartier, de visites nocturnes, d'ateliers in-situ, et, une véritable réflexion pour allier design et identité sociale.
+pLuz, agence de conception lumière à Medellín, s'intéresse à l'éclairage social. En son cœur, un travail de méthodologie et de concertation afin d'intégrer les habitants des quartiers concernés au processus créatif en les sensibilisant à l'espace urbain et l'éclairage de leur ville. En 2016 je travaille aux côtés de Raphael Girouard sur la Quebrada Chiguaza à Bogotá. Le projet ARCOIRIS est le résultat de 2 mois de collaboration, d'échanges avec les habitants du quartier, de visites nocturnes, d'ateliers in situ, et une véritable réflexion pour allier design et identité sociale.
 
 ## en
 

@@ -18,7 +18,7 @@ images:
 
 ## fr
 
-Pédalo Dynamo est un mobilier festivalier, fruit d'un imaginaire estival. Une installation proposée par [Victor Mauro](https://cavafairedubruit.fr/pedalo-dynamo) pour le festival We Love Green en 2017. &nbsp;Une lanterne pour s'éclairer: la technologie du dynamo nous permet, avec un peu d'efforts ; en plus de recharger la batterie du portable, d'allumer une lanterne pour s'éclairer et faire signe afin de créer un point de rencontre des festivaliers. Une lumière aux moirages froids pour rappeler le clair de lune lors de ces nuits musicales.
+Pédalo Dynamo est un mobilier festivalier, fruit d'un imaginaire estival. Une installation proposée par [Victor Mauro](https://cavafairedubruit.fr/pedalo-dynamo) pour le festival We Love Green en 2017. Une lanterne pour s'éclairer : la technologie de la dynamo nous permet, avec un peu d'effort, en plus de recharger la batterie du portable, d'allumer une lanterne pour s'éclairer et faire signe afin de créer un point de rencontre des festivaliers. Une lumière aux moirages froids pour rappeler le clair de lune lors de ces nuits musicales.
 
 ## en
 

@@ -13,7 +13,7 @@ images:
 
 ## fr
 
-Vaste est une agence de conception lumière à Paris. En 2018 je commence à collaborer en tant que conceptrice indépendante. Depuis, je travaille ponctuellement avec eux comme responsable de projet sur tout type de projets lumière: scénographie, intérieur, architectural, et exposition.
+Vaste est une agence de conception lumière à Paris. En 2018 je commence à collaborer en tant que conceptrice indépendante. Depuis, je travaille ponctuellement avec eux comme responsable de projet sur tout type de projets lumière : scénographie, intérieur, architectural, et exposition.
 Objectif Mars, Futuroscope
 Scénographes : Les crayons
 © JL AUDY/FUTUROSCOPE

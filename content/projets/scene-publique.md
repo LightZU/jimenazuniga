@@ -1,5 +1,5 @@
 ---
-titre: Scène publique
+titre: Scène Publique
 rubrique: collaborations
 ordre: 2
 accueil: Scène Publique, 2019-2024
@@ -14,7 +14,7 @@ images:
 
 ## fr
 
-Scène publique est une agence de scénographie et de conception lumière située à Paris et Marseille. Aux côtés d'Agathe Argod, je participe à la gestion du projet de la Zac du Moulon à Saclay. Depuis 2019 une nouvelle aventure concernant l'éclairage extérieur et l'espace public a commencée: de nouvelles méthodologies afin de donner, aux usager, accès à un éclairage extérieur de qualité et des espaces publics animés.
+Scène Publique est une agence de scénographie et de conception lumière située à Paris et Marseille. Aux côtés d'Agathe Argod, je participe à la gestion du projet de la ZAC du Moulon à Saclay. Depuis 2019 une nouvelle aventure concernant l'éclairage extérieur et l'espace public a commencé : de nouvelles méthodologies afin de donner aux usagers accès à un éclairage extérieur de qualité et des espaces publics animés.
 
 ## en
 
