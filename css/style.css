@@ -123,6 +123,33 @@ h1.libelle {
   color: var(--bleu);
 }
 
+/* Ordinateur et tablette : les liens dans les textes (bio, fiches projet, news)
+   sont signalés en bleu, comme sur mobile ; orange et soulignés au survol.
+   Les listes (projets, collaborations, events) et le contact restent orange. */
+@media screen and (min-width: 480px) {
+  .lien-texte {
+    color: var(--bleu);
+  }
+
+  .lien-texte:hover {
+    color: var(--orange);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.15em;
+  }
+
+  .lien-texte--orange-mobile,
+  .panneau--events .lien-texte {
+    color: var(--orange);
+  }
+
+  .lien-texte--orange-mobile:hover,
+  .panneau--events .lien-texte:hover {
+    color: var(--bleu);
+    text-decoration: none;
+  }
+}
+
 /* 4. Accueil ------------------------------------------------------------- */
 
 /* Fond bleu plein écran (blanc en mode blanc) */
