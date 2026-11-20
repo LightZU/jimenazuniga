@@ -28,7 +28,7 @@ Avec le soutien d’[iGuzzini](https://www.instagram.com/iguzzini/) et de [Soka 
 
 [voir la vidéo](https://www.instagram.com/reel/Db-eTJgtWmX/)
 
-Photos : [Anthony Marques](https://www.instagram.com/anthonymarques/) et Jimena Zúñiga
+Photos : Anthony Marques et Jimena Zúñiga
 
 ## en
 
@@ -40,7 +40,7 @@ With the support of [iGuzzini](https://www.instagram.com/iguzzini/) and [Soka Li
 
 [watch the video](https://www.instagram.com/reel/Db-eTJgtWmX/)
 
-Photos: [Anthony Marques](https://www.instagram.com/anthonymarques/) and Jimena Zúñiga
+Photos: Anthony Marques and Jimena Zúñiga
 
 ## photos fr
 
