@@ -26,6 +26,8 @@ Conception lumière pour la [Nuit Blanche 2023](https://www.paris.fr/nuit-blanch
 
 Avec le soutien d’[iGuzzini](https://www.instagram.com/iguzzini/) et de [Soka Lighting](https://www.instagram.com/sokalighting/).
 
+[voir la vidéo](https://www.instagram.com/reel/Db-eTJgtWmX/)
+
 Photos : [Anthony Marques](https://www.instagram.com/anthonymarques/) et Jimena Zúñiga
 
 ## en
@@ -35,6 +37,8 @@ ENSŌ, “circle” in Japanese, is the calligraphic gesture drawn in a single s
 Lighting design for [Nuit Blanche 2023](https://www.paris.fr/nuit-blanche), at the Halle des Blancs-Manteaux. The light follows the curves of the steel and extends the acrobats’ movements through their projected shadows. A rosy hue answers the blue floor, in the spirit of a utopian gym. This contrast also makes the textured light drawn on the floor vibrate.
 
 With the support of [iGuzzini](https://www.instagram.com/iguzzini/) and [Soka Lighting](https://www.instagram.com/sokalighting/).
+
+[watch the video](https://www.instagram.com/reel/Db-eTJgtWmX/)
 
 Photos: [Anthony Marques](https://www.instagram.com/anthonymarques/) and Jimena Zúñiga
 
