@@ -24,12 +24,12 @@ images:
 
 ## photos fr
 
-- les-ateliers-de-leclairage-01.jpg : Conception lumière résidentielle avec Les Ateliers de l'Eclairage : piscine intérieure et éclairage indirect au plafond
-- les-ateliers-de-leclairage-02.jpg : Les Ateliers de l'Eclairage : bassin intérieur, colonnes en marbre vert et gorges lumineuses
-- les-ateliers-de-leclairage-03.jpg : Les Ateliers de l'Eclairage : salle de sport privée, cercle lumineux suspendu et éclairage encastré
+- les-ateliers-de-leclairage-01.jpg : Conception lumière résidentielle avec Les Ateliers de l'Eclairage, villa en Suisse : piscine intérieure et éclairage indirect au plafond
+- les-ateliers-de-leclairage-02.jpg : Les Ateliers de l'Eclairage, villa en Suisse : bassin intérieur, colonnes en marbre vert et gorges lumineuses
+- les-ateliers-de-leclairage-03.jpg : Les Ateliers de l'Eclairage, villa en Suisse : salle de sport privée, cercle lumineux suspendu et éclairage encastré
 
 ## photos en
 
-- les-ateliers-de-leclairage-01.jpg : Residential lighting design with Les Ateliers de l'Eclairage: indoor pool with indirect cove lighting
-- les-ateliers-de-leclairage-02.jpg : Les Ateliers de l'Eclairage: indoor pool, green marble columns and lighting coves
-- les-ateliers-de-leclairage-03.jpg : Les Ateliers de l'Eclairage: private gym with a suspended light ring and recessed lighting
+- les-ateliers-de-leclairage-01.jpg : Residential lighting design with Les Ateliers de l'Eclairage, villa in Switzerland: indoor pool with indirect cove lighting
+- les-ateliers-de-leclairage-02.jpg : Les Ateliers de l'Eclairage, villa in Switzerland: indoor pool, green marble columns and lighting coves
+- les-ateliers-de-leclairage-03.jpg : Les Ateliers de l'Eclairage, villa in Switzerland: private gym with a suspended light ring and recessed lighting

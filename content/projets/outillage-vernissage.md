@@ -26,14 +26,14 @@ Outillage Vernissage by [Céline Pelcé](https://www.celinepelce.fr/) as part of
 
 ## photos fr
 
-- outillage-vernissage-01.jpg : Outillage Vernissage, Paris Design Week 2018 : table de dégustation, figues sur marbre en lumière chaude
-- outillage-vernissage-02.jpg : Outillage Vernissage : verres sur un socle blanc, mise en lumière chaude du vernissage culinaire
-- outillage-vernissage-03.jpg : Outillage Vernissage : reflets et brillances sur la table de dégustation
-- outillage-vernissage-04.jpg : Outillage Vernissage : invités se servant sur la table en marbre, éclairage d'ambiance chaud
+- outillage-vernissage-01.jpg : Outillage Vernissage, événement de design culinaire, Paris Design Week 2018 : figues sur marbre, lumière chaude et matière
+- outillage-vernissage-02.jpg : Outillage Vernissage, design culinaire : verres sur un socle blanc, mise en lumière chaude de l'événement
+- outillage-vernissage-03.jpg : Outillage Vernissage, lumière et matière : reflets et brillances sur la table de dégustation
+- outillage-vernissage-04.jpg : Outillage Vernissage, événement de design culinaire : invités autour de la table en marbre, éclairage d'ambiance chaud
 
 ## photos en
 
-- outillage-vernissage-01.jpg : Outillage Vernissage, Paris Design Week 2018: tasting table, figs on marble in warm light
-- outillage-vernissage-02.jpg : Outillage Vernissage: glasses on a white plinth, warm lighting for the culinary opening
-- outillage-vernissage-03.jpg : Outillage Vernissage: reflections and glints on the tasting table
-- outillage-vernissage-04.jpg : Outillage Vernissage: guests helping themselves at the marble table, warm ambient lighting
+- outillage-vernissage-01.jpg : Outillage Vernissage, culinary design event, Paris Design Week 2018: figs on marble, warm light and texture
+- outillage-vernissage-02.jpg : Outillage Vernissage, culinary design: glasses on a white plinth, warm event lighting
+- outillage-vernissage-03.jpg : Outillage Vernissage, light and material: reflections and glints on the tasting table
+- outillage-vernissage-04.jpg : Outillage Vernissage, culinary design event: guests around the marble table, warm ambient lighting

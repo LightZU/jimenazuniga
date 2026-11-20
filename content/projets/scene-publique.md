@@ -22,8 +22,8 @@ Scène publique is a scenography and lighting design agency based in Paris and M
 
 ## photos fr
 
-- scene-publique-01.jpg : Éclairage extérieur et espace public avec Scène Publique : mât d'éclairage à la tombée de la nuit
+- scene-publique-01.jpg : Éclairage urbain et extérieur de la ZAC du Moulon à Saclay, avec Scène Publique et Bruel-Delmar : mât d'éclairage de l'espace public à la tombée de la nuit
 
 ## photos en
 
-- scene-publique-01.jpg : Outdoor and public space lighting with Scène Publique: lighting mast at dusk
+- scene-publique-01.jpg : Urban and outdoor lighting for the ZAC du Moulon, Saclay, with Scène Publique and Bruel-Delmar: public space lighting mast at dusk

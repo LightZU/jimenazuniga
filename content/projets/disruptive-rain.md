@@ -22,8 +22,8 @@ Disruptive Rain is a light structure: a rain cloud. Yet this outlined cloud - ec
 
 ## photos fr
 
-- disruptive-rain-01.jpg : Disruptive Rain, installation lumineuse : deux nuages de lumière au-dessus d'un canal, de nuit, reflétés dans l'eau
+- disruptive-rain-01.jpg : Disruptive Rain, installation lumineuse pour un festival à Amsterdam : deux nuages de lumière au-dessus d'un canal, de nuit, reflétés dans l'eau
 
 ## photos en
 
-- disruptive-rain-01.jpg : Disruptive Rain, light installation: two luminous rain clouds above a canal at night, reflected in the water
+- disruptive-rain-01.jpg : Disruptive Rain, light installation for a festival in Amsterdam: two luminous rain clouds above a canal at night, reflected in the water
