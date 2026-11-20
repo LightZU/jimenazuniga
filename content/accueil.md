@@ -5,7 +5,9 @@ linkedin: https://www.linkedin.com/in/jimena-zuniga-6135415b/
 adresse_lien: https://www.google.com/maps/search/?api=1&query=140+Rue+Sainte,+13007+Marseille
 telephone: +33 7 82 84 03 85
 email: contact@jimenazuniga.com
-news_lien: https://tangible-festival.org/programme/chiche
+# News : texte facultatif (sections « ## news fr/en » vides = seule l'image
+# news_apercu s'affiche au survol de « news ») ; news_lien = lien du texte
+news_lien:
 news_apercu: news-apercu.jpg
 news_apercu_position: haut-gauche
 # Référencement (invisible à l'écran : moteurs de recherche, IA, aperçus de partage)
@@ -47,15 +49,7 @@ MOA Architecture
 
 ## news fr
 
-Mise en lumière pour l'agrès-sculpture ENSŌ
-Chiche ! Le design au Sud
-À voir jusqu'au 25 octobre 2026 dans la galerie [videochroniques](https://www.instagram.com/videochroniques__vdchrnqs/?hl=fr) dans le Panier à Marseille.
-
 ## news en
-
-Lighting for the ENSŌ apparatus-sculpture
-Chiche! Design in the South
-On view until 25 October 2026 at the [videochroniques](https://www.instagram.com/videochroniques__vdchrnqs/?hl=fr) gallery in Le Panier, Marseille.
 
 ## description fr
 

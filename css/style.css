@@ -221,6 +221,11 @@ h1.libelle {
   display: none;
 }
 
+/* Panneau sans contenu (ex. news avec image seule) : le libellé reste affiché */
+.panneau.est-ouvert > .libelle:only-child {
+  display: block;
+}
+
 .panneau.est-ouvert > .contenu {
   display: block;
 }

@@ -46,9 +46,11 @@
   </div>
 
   <!-- News (bas gauche) -->
-  <div class="panneau panneau--news" data-panneau data-mode-blanc data-echelle="0.8">
+  <!-- L'image de la news (news_apercu) s'affiche au survol de tout l'encart,
+       libellé compris ; le texte est facultatif -->
+  <div class="panneau panneau--news" data-panneau data-mode-blanc data-echelle="0.8" data-apercu="news">
     <a href="#" class="libelle">news</a>
-    <div class="contenu" data-apercu="news">{{news}}</div>
+{{news}}
   </div>
 
   <!-- Collaborations (bas centre) -->

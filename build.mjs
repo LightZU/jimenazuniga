@@ -387,7 +387,9 @@ function construireAccueil(lang) {
     `<a href="tel:${a.telephone.replace(/\s/g, '')}" class="lien-texte lien-texte--orange-mobile">${echapper(a.telephone)}</a>`,
     `<a href="mailto:${a.email}" class="lien-texte lien-texte--orange-mobile">${echapper(a.email)}</a>`,
   ].join('<br>');
-  const news = construireNews(accueil.sections[`news ${lang}`], a.news_lien);
+  // News : texte facultatif (sans texte, seule l'image s'affiche au survol de « news »)
+  const texteNews = construireNews(accueil.sections[`news ${lang}`], a.news_lien);
+  const news = texteNews ? `    <div class="contenu">${texteNews}</div>` : '';
 
   const apercus = projets
     .filter((p) => p.apercu && p.accueil && p.accueil !== 'non')
