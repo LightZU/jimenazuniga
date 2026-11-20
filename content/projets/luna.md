@@ -5,7 +5,7 @@ ordre: 2
 accueil: Luna, 2021
 apercu: luna-apercu.jpg
 apercu_position: centre-gauche
-suivant: micro-architecture-lumiere
+suivant: enso-variations
 suivant_libelle: projet
 texte_mobile_plein_ecran: oui
 auteurs: Jimena Zúñiga, Victor Mauro
