@@ -22,3 +22,15 @@ Social Lightscapes est un workshop dans le cadre du PLDC 2017. La place des Fêt
 Social Lightscapes is a workshop held as part of PLDC 2017. Place des Fêtes is a major space in the 19th arrondissement of Paris. The square is a meeting place, home to the market and to various events. Four days of work, following a social and spatial study as a team, allowed us to offer solutions for this public space: listening to the residents and their main concerns in order - through qualitative and attractive lighting - to improve the quality of night life for city dwellers, to make them want to live in the square again and, in tribute to its name, to party!
 
 [watch the video](https://youtu.be/d0svCuLN-f4)
+
+## photos fr
+
+- social-lightscapes-01.jpg : Social Lightscapes, workshop PLDC 2017, place des Fêtes à Paris : test d'éclairage avec un tube lumineux
+- social-lightscapes-02.jpg : Social Lightscapes : enfants courant sur la place des Fêtes à travers les faisceaux lumineux
+- social-lightscapes-03.jpg : Social Lightscapes : mise en lumière nocturne de la place des Fêtes, faisceaux au sol et projection verte
+
+## photos en
+
+- social-lightscapes-01.jpg : Social Lightscapes, PLDC 2017 workshop, Place des Fêtes, Paris: lighting test with a light tube
+- social-lightscapes-02.jpg : Social Lightscapes: children running across Place des Fêtes through beams of light
+- social-lightscapes-03.jpg : Social Lightscapes: night lighting of Place des Fêtes, ground beams and green projection

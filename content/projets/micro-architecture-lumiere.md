@@ -19,3 +19,13 @@ Cette micro-architecture lumière est un travail, en équipe, résultant d'une r
 ## en
 
 This light micro-architecture is a team project resulting from plastic research for an ephemeral installation. A diffuse glow inside invites us to enter this "cocoon". Backlighting reveals the graphic forms of the structure. A warm light reinforces the installation's sense of refuge and seeks to welcome us gently.
+
+## photos fr
+
+- micro-architecture-lumiere-01.jpg : Micro-architecture lumière, installation éphémère de jour : structure en tasseaux de bois et film translucide
+- micro-architecture-lumiere-02.jpg : Micro-architecture lumière la nuit : lueur chaude diffuse, structure révélée en contre-jour
+
+## photos en
+
+- micro-architecture-lumiere-01.jpg : Light micro-architecture, temporary installation by day: timber battens and translucent film
+- micro-architecture-lumiere-02.jpg : Light micro-architecture at night: warm diffuse glow, structure revealed by backlighting

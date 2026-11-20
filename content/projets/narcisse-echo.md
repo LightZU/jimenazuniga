@@ -20,3 +20,13 @@ Narcisse & Écho est un projet inspiré par le mythe grec. Nous avons imaginé u
 ## en
 
 Narcisse & Écho is a project inspired by the Greek myth. We imagined a space of contemplation where sound and light are the protagonists. A place of contemplation with shimmering reflections which, appealing to our senses, leads us towards new perceptions. The spirit of these two figures is brought back into the room through the furniture: a mirrored portico and a seat with special acoustics. In collaboration with [Victor Mauro](https://cavafairedubruit.fr/).
+
+## photos fr
+
+- narcisse-echo-01.jpg : Narcisse & Écho, perspective du projet : chambre aux reflets d'eau, portique miroitant et assise acoustique
+- narcisse-echo-02.jpg : Narcisse & Écho : reflets lumineux ondoyants, comme à la surface de l'eau
+
+## photos en
+
+- narcisse-echo-01.jpg : Narcisse & Écho, project visual: room with water reflections, shimmering portal and acoustic seat
+- narcisse-echo-02.jpg : Narcisse & Écho: rippling light reflections, like on the surface of water

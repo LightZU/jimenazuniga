@@ -18,3 +18,11 @@ Ax'o Studio, éclairagiste à Paris, m'intègre dans l'équipe de réglages lumi
 ## en
 
 Ax'o Studio, lighting designers in Paris, brought me into their lighting focusing team for Galeries Lafayette. Since 2018, several sessions have been held in the Galeries Lafayette stores in Marseille and Nice.
+
+## photos fr
+
+- axo-studio-01.jpg : Réglages lumière aux Galeries Lafayette avec Ax'o Studio : espace mode éclairé, mobilier orange et mannequins
+
+## photos en
+
+- axo-studio-01.jpg : Lighting focusing at Galeries Lafayette with Ax'o Studio: lit fashion floor, orange furniture and mannequins

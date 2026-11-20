@@ -24,3 +24,15 @@ Architecte intérieur: Jeff van Dyck.
 Voyons Voir, a lighting design agency in Paris, specialises in interiors and the world of luxury. For 2 years, I worked alongside them with great attention to finishes and to enhancing materials. I work on the effect light produces rather than on light itself: plastic and technical research focusing on the most discreet integration details, in order to keep a magical dimension of light in space.
 Pierre Hermé boutique, Paris.
 Interior architect: Jeff van Dyck.
+
+## photos fr
+
+- voyons-voir-pierre-herme-01.jpg : Boutique Pierre Hermé à Paris, éclairage avec Voyons Voir : plafond courbe et spots encastrés
+- voyons-voir-pierre-herme-02.jpg : Boutique Pierre Hermé : lumière rasante sur la paroi courbe, éclairage intégré qui valorise la matière
+- voyons-voir-pierre-herme-03.jpg : Boutique Pierre Hermé, Paris : intérieur vu depuis la vitrine, éclairage du comptoir et du plafond
+
+## photos en
+
+- voyons-voir-pierre-herme-01.jpg : Pierre Hermé boutique, Paris, lighting with Voyons Voir: curved ceiling and recessed spotlights
+- voyons-voir-pierre-herme-02.jpg : Pierre Hermé boutique: grazing light on the curved wall, integrated lighting enhancing the material
+- voyons-voir-pierre-herme-03.jpg : Pierre Hermé boutique, Paris: interior seen through the shop window, counter and ceiling lighting

@@ -19,3 +19,11 @@ Dumas Lumière est l'agence parisienne de Marc Dumas. Je partage avec lui une ex
 ## en
 
 Dumas Lumière is Marc Dumas's Paris-based agency. I spent 3 months with him, during which I worked on subjects such as exterior and interior lighting and museography, and explored the plastic qualities of light. For the Musée des Beaux-Arts d'Orléans project, I assisted him with photometric surveys of artworks and technical studies, and with proposing a new solution to optimise the lighting.
+
+## photos fr
+
+- dumas-lumiere-01.jpg : Éclairage muséographique avec Dumas Lumière : salle de musée, tableaux et sculpture mis en lumière
+
+## photos en
+
+- dumas-lumiere-01.jpg : Museum lighting with Dumas Lumière: gallery of paintings and a sculpture under accent lighting

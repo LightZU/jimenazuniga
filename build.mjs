@@ -170,6 +170,29 @@ const projets = fs.readdirSync(dossierProjets)
   });
 const parSlug = Object.fromEntries(projets.map((p) => [p.slug, p]));
 
+/* Descriptions des photos (attribut alt : accessibilité et Google Images).
+   Sections « ## photos fr » et « ## photos en » d'une fiche projet, une ligne
+   par photo :  - nom-du-fichier.jpg : description
+   Sans description, l'image reprend le titre du projet. */
+function lireDescriptions(texte) {
+  const descriptions = {};
+  for (const ligne of (texte || '').split('\n')) {
+    const m = ligne.match(/^\s*-\s*([^\s:]+)\s*:\s*(.+)$/);
+    if (m) descriptions[m[1]] = m[2].trim();
+  }
+  return descriptions;
+}
+for (const p of projets) {
+  p.descriptions = {};
+  for (const lang of LANGUES) {
+    p.descriptions[lang] = lireDescriptions(p.sections[`photos ${lang}`]);
+    for (const fichier of Object.keys(p.descriptions[lang])) {
+      if (!p.images.some((img) => img.fichier === fichier)) avertir(`${p.slug} : description « photos ${lang} » pour une image absente de la liste (${fichier})`);
+    }
+  }
+}
+const altImage = (p, fichier, lang) => p.descriptions[lang][fichier] || traduit(p, 'titre', lang);
+
 // Vérifications
 for (const p of projets) {
   if (!['projets', 'collaborations', 'events'].includes(p.rubrique)) avertir(`${p.slug} : rubrique « ${p.rubrique} » inconnue`);
@@ -419,7 +442,7 @@ function construireProjet(p, lang) {
     const classes = `visuel visuel--${img.largeur}${img.plein ? ' visuel--plein' : ''}`;
     const sizes = TAILLES[img.plein ? 'plein' : img.largeur];
     const srcset = balisesSrcset(img.fichier, racine);
-    return `      <div class="diaporama__diapo"><img src="${racine}images/${img.fichier}"${srcset}${srcset ? ` sizes="${sizes}"` : ''} alt="${echapperAttribut(traduit(p, 'titre', lang))}" class="${classes}"></div>`;
+    return `      <div class="diaporama__diapo"><img src="${racine}images/${img.fichier}"${srcset}${srcset ? ` sizes="${sizes}"` : ''} alt="${echapperAttribut(altImage(p, img.fichier, lang))}" class="${classes}"></div>`;
   }).join('\n');
 
   const lienSuivant = p.suivant

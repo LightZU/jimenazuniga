@@ -19,3 +19,11 @@ Scène Publique est une agence de scénographie et de conception lumière situé
 ## en
 
 Scène publique is a scenography and lighting design agency based in Paris and Marseille. Alongside Agathe Argod, I take part in managing the ZAC du Moulon project in Saclay. Since 2019, a new adventure in outdoor lighting and public space has begun: new methodologies to give users access to quality outdoor lighting and lively public spaces.
+
+## photos fr
+
+- scene-publique-01.jpg : Éclairage extérieur et espace public avec Scène Publique : mât d'éclairage à la tombée de la nuit
+
+## photos en
+
+- scene-publique-01.jpg : Outdoor and public space lighting with Scène Publique: lighting mast at dusk

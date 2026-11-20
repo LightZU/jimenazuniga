@@ -19,3 +19,13 @@ Jardin Onirique est une installation lumière réalisée dans le cadre des Fête
 ## en
 
 Jardin Onirique is a light installation created for the Fête des Lumières in Lyon in 2014. It is the result of a workshop between students from the Leipzig school of architecture, the Wismar school and the IAE Lyon. A lighting atmosphere suggests the softness of a dream which, from time to time - thanks to DMX programming - becomes jerky and psychedelic. When the dream is steeped in revolution: coloured yet contrasting lights raise the paradox and the balance of these two subjects.
+
+## photos fr
+
+- jardin-onirique-01.jpg : Jardin Onirique, Fête des Lumières de Lyon 2014 : sphères lumineuses et feuillages éclairés en rouge
+- jardin-onirique-02.jpg : Jardin Onirique : arbre éclairé en rose et bleu devant une façade, installation lumière à Lyon
+
+## photos en
+
+- jardin-onirique-01.jpg : Jardin Onirique, Lyon Festival of Lights 2014: glowing spheres and foliage lit in red
+- jardin-onirique-02.jpg : Jardin Onirique: tree lit in pink and blue in front of a façade, light installation in Lyon

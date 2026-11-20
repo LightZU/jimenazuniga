@@ -29,3 +29,19 @@ Cadran is a luminous object in Sidobre granite inspired by sundials. It replaces
 
 [watch the video](https://vimeo.com/458698606)
 [press](https://www.ladepeche.fr/2020/09/08/le-granit-du-sidobre-montre-un-autre-visage-a-la-paris-design-week-9056320.php)
+
+## photos fr
+
+- cadran-01.jpg : Cadran, objet lumineux et horloge en granit du Sidobre, éteint : disque de granit et pastille centrale
+- cadran-02.jpg : Cadran allumé : lumière rasante sur le granit bouchardé et ombre de la tige qui indique l'heure
+- cadran-03.jpg : Cadran vu de biais, objet lumineux mural en granit du Sidobre, la nuit
+- cadran-04.jpg : Cadran de profil : source lumineuse cachée et tige qui projette son ombre sur le granit
+- cadran-05.jpg : Gros plan sur Cadran : texture du granit bouchardé révélée par la lumière rasante, ombre de l'aiguille
+
+## photos en
+
+- cadran-01.jpg : Cadran, luminous object and clock in Sidobre granite, switched off: granite disc with its central cap
+- cadran-02.jpg : Cadran lit up: grazing light on bush-hammered granite and the shadow of the rod telling the time
+- cadran-03.jpg : Cadran seen from the side, a wall-mounted light object in Sidobre granite at night
+- cadran-04.jpg : Cadran in profile: hidden light source and rod casting its shadow on the granite
+- cadran-05.jpg : Close-up of Cadran: bush-hammered granite texture revealed by grazing light, with the hand's shadow

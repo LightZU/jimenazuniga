@@ -19,3 +19,11 @@ Disruptive Rain est une structure lumineuse : un nuage de pluie. Pourtant ce nua
 ## en
 
 Disruptive Rain is a light structure: a rain cloud. Yet this outlined cloud - echoing the icon used in weather forecasts - shows rain going the wrong way. Instead of falling, it rises towards the sky. This optical phenomenon reflects the image of a weather gone haywire. It raises the question of climate and its stakes. It calls for new paradigms, where the impossible becomes possible, in order to reverse the effects of climate change. In collaboration with [Victor Mauro.](https://cavafairedubruit.fr/)
+
+## photos fr
+
+- disruptive-rain-01.jpg : Disruptive Rain, installation lumineuse : deux nuages de lumière au-dessus d'un canal, de nuit, reflétés dans l'eau
+
+## photos en
+
+- disruptive-rain-01.jpg : Disruptive Rain, light installation: two luminous rain clouds above a canal at night, reflected in the water

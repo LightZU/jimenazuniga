@@ -21,3 +21,15 @@ Architecte intérieur: Landmark.
 Voyons Voir, a lighting design agency in Paris, specialises in interiors and the world of luxury. For 2 years, I worked alongside them with great attention to finishes and to enhancing materials. I work on the effect light produces rather than on light itself: plastic and technical research focusing on the most discreet integration details, in order to keep a magical dimension of light in space.
 VCA boutique, Munich.
 Interior architect: Landmark.
+
+## photos fr
+
+- voyons-voir-vca-01.jpg : Boutique Van Cleef & Arpels à Munich, éclairage avec Voyons Voir : miroir rétroéclairé et salon
+- voyons-voir-vca-02.jpg : Van Cleef & Arpels Munich : vitrine sous cloche éclairée et salon, éclairage d'espace de luxe
+- voyons-voir-vca-03.jpg : Van Cleef & Arpels Munich : paroi ajourée et vitrine, détails d'éclairage intégré
+
+## photos en
+
+- voyons-voir-vca-01.jpg : Van Cleef & Arpels boutique, Munich, lighting with Voyons Voir: backlit mirror and lounge
+- voyons-voir-vca-02.jpg : Van Cleef & Arpels Munich: lit glass-dome display and lounge, luxury retail lighting
+- voyons-voir-vca-03.jpg : Van Cleef & Arpels Munich: openwork screen and display case, integrated lighting details

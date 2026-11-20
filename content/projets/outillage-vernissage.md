@@ -23,3 +23,17 @@ Outillage Vernissage de [Céline Pelcé](https://www.celinepelce.fr/) dans le ca
 ## en
 
 Outillage Vernissage by [Céline Pelcé](https://www.celinepelce.fr/) as part of Paris Design Week 2018. A lighting design favouring warm tones to accompany and welcome the guests in this culinary experience. The food, its colours, its textures and the materials that go with it create a play of light, reflections and shine that stimulates our senses during the tasting.
+
+## photos fr
+
+- outillage-vernissage-01.jpg : Outillage Vernissage, Paris Design Week 2018 : table de dégustation, figues sur marbre en lumière chaude
+- outillage-vernissage-02.jpg : Outillage Vernissage : verres sur un socle blanc, mise en lumière chaude du vernissage culinaire
+- outillage-vernissage-03.jpg : Outillage Vernissage : reflets et brillances sur la table de dégustation
+- outillage-vernissage-04.jpg : Outillage Vernissage : invités se servant sur la table en marbre, éclairage d'ambiance chaud
+
+## photos en
+
+- outillage-vernissage-01.jpg : Outillage Vernissage, Paris Design Week 2018: tasting table, figs on marble in warm light
+- outillage-vernissage-02.jpg : Outillage Vernissage: glasses on a white plinth, warm lighting for the culinary opening
+- outillage-vernissage-03.jpg : Outillage Vernissage: reflections and glints on the tasting table
+- outillage-vernissage-04.jpg : Outillage Vernissage: guests helping themselves at the marble table, warm ambient lighting
