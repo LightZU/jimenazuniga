@@ -1,7 +1,7 @@
 ---
 titre: Outillage Vernissage
 rubrique: projets
-ordre: 5
+ordre: 6
 accueil: Outillage Vernissage, 2018
 apercu: outillage-vernissage-apercu.jpg
 apercu_position: haut-gauche

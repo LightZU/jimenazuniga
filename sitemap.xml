@@ -169,6 +169,18 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.jimenazuniga.com/outillage-vernissage.html"/>
   </url>
   <url>
+    <loc>https://www.jimenazuniga.com/paysages-de-marche.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.jimenazuniga.com/paysages-de-marche.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.jimenazuniga.com/en/paysages-de-marche.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.jimenazuniga.com/paysages-de-marche.html"/>
+  </url>
+  <url>
+    <loc>https://www.jimenazuniga.com/en/paysages-de-marche.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.jimenazuniga.com/paysages-de-marche.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.jimenazuniga.com/en/paysages-de-marche.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.jimenazuniga.com/paysages-de-marche.html"/>
+  </url>
+  <url>
     <loc>https://www.jimenazuniga.com/pedalo-dynamo.html</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.jimenazuniga.com/pedalo-dynamo.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.jimenazuniga.com/en/pedalo-dynamo.html"/>

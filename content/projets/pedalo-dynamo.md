@@ -1,7 +1,7 @@
 ---
 titre: Pédalo Dynamo
 rubrique: projets
-ordre: 7
+ordre: 8
 accueil: Pédalo Dynamo, 2017
 apercu: pedalo-dynamo-apercu.jpg
 apercu_position: haut-gauche

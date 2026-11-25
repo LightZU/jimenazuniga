@@ -1,7 +1,7 @@
 ---
 titre: Narcisse & Écho
 rubrique: projets
-ordre: 6
+ordre: 7
 accueil: Narcisse & Écho, 2018
 apercu: narcisse-echo-apercu.jpg
 apercu_position: centre-gauche

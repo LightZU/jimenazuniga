@@ -1,7 +1,7 @@
 ---
 titre: Enso Variations
 rubrique: projets
-ordre: 1
+ordre: 2
 accueil: Enso Variations, 2023
 apercu: enso-variations-conception-lumiere-nuit-blanche-2023-apercu.jpg
 apercu_position: centre-droite

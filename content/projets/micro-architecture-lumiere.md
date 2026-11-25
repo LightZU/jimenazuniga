@@ -1,7 +1,7 @@
 ---
 titre: Micro-architecture lumière
 rubrique: projets
-ordre: 9
+ordre: 10
 accueil: Micro-architecture lumière, 2012
 apercu: micro-architecture-lumiere-apercu.jpg
 apercu_position: bas-gauche

@@ -1,11 +1,11 @@
 ---
 titre: Luna
 rubrique: projets
-ordre: 2
+ordre: 3
 accueil: Luna, 2021
 apercu: luna-apercu.jpg
 apercu_position: centre-gauche
-suivant: enso-variations
+suivant: paysages-de-marche
 suivant_libelle: projet
 texte_mobile_plein_ecran: oui
 auteurs: Jimena Zúñiga, Victor Mauro
