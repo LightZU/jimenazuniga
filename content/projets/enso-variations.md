@@ -20,27 +20,25 @@ images:
 
 ## fr
 
-ENSŌ, « cercle » en japonais, est ce geste calligraphique tracé d’un seul trait, où le corps et l’esprit se libèrent. [Céline Thibault](https://www.instagram.com/_celinethibault_/) et [Géraud Pellottiero](https://www.instagram.com/geraudpellottiero/) en ont fait un agrès-sculpture monumental : deux parenthèses d’acier cintré et un anneau en rotation, suspendus dans le vide.
-
-Conception lumière pour la [Nuit Blanche 2023](https://www.paris.fr/nuit-blanche), à la Halle des Blancs-Manteaux. La lumière accompagne les courbes de l’acier et prolonge le geste des acrobates par leurs ombres projetées. Une teinte rosée répond au bleu du sol, dans l’esprit d’une salle de sport utopiste. Ce contraste fait aussi vibrer la lumière texturée dessinée au sol.
+ENSŌ, « cercle » en japonais, est ce geste calligraphique tracé d’un seul trait, où le corps et l’esprit se libèrent. [Céline Thibault](https://www.instagram.com/_celinethibault_/) et [Géraud Pellottiero](https://www.instagram.com/geraudpellottiero/) en ont fait un agrès-sculpture monumental : deux parenthèses d’acier cintré et un anneau en rotation, suspendus dans le vide. Conception lumière pour la [Nuit Blanche 2023](https://www.paris.fr/nuit-blanche), à la Halle des Blancs-Manteaux. La lumière accompagne les courbes de l’acier et prolonge le geste des acrobates par leurs ombres projetées. Une teinte rosée répond au bleu du sol, dans l’esprit d’une salle de sport utopiste. Ce contraste fait aussi vibrer la lumière texturée dessinée au sol.
 
 Avec le soutien d’[iGuzzini](https://www.instagram.com/iguzzini/) et de [Soka Lighting](https://www.instagram.com/sokalighting/).
 
 [voir la vidéo](https://www.instagram.com/reel/Db-eTJgtWmX/)
 
-Photos : Anthony Marques et Jimena Zúñiga
+Photos : Anthony Marques et
+Jimena Zúñiga
 
 ## en
 
-ENSŌ, “circle” in Japanese, is the calligraphic gesture drawn in a single stroke, in which body and mind are set free. [Céline Thibault](https://www.instagram.com/_celinethibault_/) and [Géraud Pellottiero](https://www.instagram.com/geraudpellottiero/) turned it into a monumental sculptural apparatus: two brackets of bent steel and a rotating ring, suspended in mid-air.
-
-Lighting design for [Nuit Blanche 2023](https://www.paris.fr/nuit-blanche), at the Halle des Blancs-Manteaux. The light follows the curves of the steel and extends the acrobats’ movements through their projected shadows. A rosy hue answers the blue floor, in the spirit of a utopian gym. This contrast also makes the textured light drawn on the floor vibrate.
+ENSŌ, “circle” in Japanese, is the calligraphic gesture drawn in a single stroke, in which body and mind are set free. [Céline Thibault](https://www.instagram.com/_celinethibault_/) and [Géraud Pellottiero](https://www.instagram.com/geraudpellottiero/) turned it into a monumental sculptural apparatus: two brackets of bent steel and a rotating ring, suspended in mid-air. Lighting design for [Nuit Blanche 2023](https://www.paris.fr/nuit-blanche), at the Halle des Blancs-Manteaux. The light follows the curves of the steel and extends the acrobats’ movements through their projected shadows. A rosy hue answers the blue floor, in the spirit of a utopian gym. This contrast also makes the textured light drawn on the floor vibrate.
 
 With the support of [iGuzzini](https://www.instagram.com/iguzzini/) and [Soka Lighting](https://www.instagram.com/sokalighting/).
 
 [watch the video](https://www.instagram.com/reel/Db-eTJgtWmX/)
 
-Photos: Anthony Marques and Jimena Zúñiga
+Photos: Anthony Marques and
+Jimena Zúñiga
 
 ## photos fr
 
