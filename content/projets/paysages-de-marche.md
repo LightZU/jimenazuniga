@@ -20,9 +20,8 @@ images:
 
 ## fr
 
-PAYSAGES DE MARCHE.
-Le [musée Courbet](https://musee-courbet.fr/exposition/paysages-de-marche/) propose une exposition inspirée d’une citation du peintre Pierre-Henri de Valenciennes en 1799&nbsp;: «&nbsp;L’artiste doit voyager à pied&nbsp;». C’est même, selon lui, la condition de la peinture de paysage.
-Dans la scénographie de FandD, le projet éclairage accompagne la marche du visiteur. Le parcours passe d’ambiances sombres à des espaces plus clairs, au fil de chemins tantôt en pente, tantôt plus lisses. L’éclairage reste sobre, et renforce en chaque salle l’atmosphère en accord avec le récit de l’exposition. Il se concentre sur les œuvres et cherche le juste équilibre entre le confort visuel du public et la préservation de celles-ci.
+PAYSAGES DE MARCHE. Le [musée Courbet](https://musee-courbet.fr/) propose une exposition inspirée d’une citation du peintre Pierre-Henri de Valenciennes en 1799&nbsp;: «&nbsp;[L’artiste doit voyager à pied](https://musee-courbet.fr/exposition/paysages-de-marche/)&nbsp;».
+Dans la scénographie de [FandD](https://www.instagram.com/fanddstudio/), le projet éclairage accompagne la marche du visiteur. Le parcours passe d’ambiances sombres à des espaces plus clairs, au fil de chemins tantôt en pente, tantôt plus lisses. L’éclairage reste sobre, et renforce en chaque salle l’atmosphère en accord avec le récit de l’exposition. Il se concentre sur les œuvres et cherche le juste équilibre entre le confort visuel du public et la préservation de celles-ci.
 
 Commissariat : Benjamin Foudral et Pierre Wat
 Équipe musée : Camille Cios, Lonnie Baverel
@@ -32,9 +31,8 @@ Installation : Nicolas Nivet
 
 ## en
 
-PAYSAGES DE MARCHE (WALKING LANDSCAPES).
-The [musée Courbet](https://musee-courbet.fr/exposition/paysages-de-marche/) presents an exhibition inspired by a quotation from the painter Pierre-Henri de Valenciennes in 1799: “The artist must travel on foot”. For him, it was even the very condition of landscape painting.
-Within FandD’s scenography, the lighting design follows the visitor’s walk. The route moves from dark atmospheres to brighter spaces, along paths that are sometimes sloped, sometimes smoother. The lighting remains restrained, and in each room enhances an atmosphere in keeping with the exhibition’s narrative. It focuses on the works and seeks the right balance between visual comfort for visitors and their preservation.
+PAYSAGES DE MARCHE (WALKING LANDSCAPES). The [musée Courbet](https://musee-courbet.fr/) presents an exhibition inspired by a quotation from the painter Pierre-Henri de Valenciennes in 1799: “[The artist must travel on foot](https://musee-courbet.fr/exposition/paysages-de-marche/)”.
+Within [FandD](https://www.instagram.com/fanddstudio/)’s scenography, the lighting design follows the visitor’s walk. The route moves from dark atmospheres to brighter spaces, along paths that are sometimes sloped, sometimes smoother. The lighting remains restrained, and in each room enhances an atmosphere in keeping with the exhibition’s narrative. It focuses on the works and seeks the right balance between visual comfort for visitors and their preservation.
 
 Curators: Benjamin Foudral and Pierre Wat
 Museum team: Camille Cios, Lonnie Baverel
